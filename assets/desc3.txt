@@ -1,0 +1,984 @@
+('Stadium Team Backpack', 1,
+
+'Designed for the soccer player on the go, this sporty backpack from Adidas offers style and storage 
+
+for everyday use. The Adidas Stadium Team Backpack is made from dobby polyester fabric and features a 
+
+large shape with water resistant HYDROSHELL protection to keep your gear safe from dirt and water. The 
+
+roomy main compartment includes a mesh valuables pocket while the exterior includes a bottom front ball 
+
+pocket and a laser cut ventilated freshPAK? compartment to hold your cleats. Extra-padded ULTRARIDE 
+
+shoulder straps are designed to handle the weight of a heavy load and make this bag incredibly 
+
+comfortable to carry.',
+
+3,456, 'assets/img/bags/backpack/adidasbackblue.png'),
+
+
+
+?Washed Canvas Backpack
+
+Vagabond Traveler 33
+BP 1
+
+i ?PHP 7,562  
+?PHP 3,744
+
+With a cool, casual look this backpack offers laidback style and ample storage for all of your day to 
+
+day essential items. The Vagabond Traveler 33 Washed Canvas Backpack is made from heavy duty washed 
+
+canvas fabric and features a gently broken in vintage inspired look with accent straps, buckle details, 
+
+and vintage brass hardware fittings. This backpack has a medium sized main compartment with a flap top 
+
+closure, a lace up closure under the flap, and an inside zipper pocket to hold small items and valuable 
+
+accessories. Three exterior flap pockets offer added storage for your cell phone, keys, and other small 
+
+items that you need to keep within easy reach.
+
+
+Everest 7
+BP 1
+Pattern Printed Backpack
+?PHP 1,152 
+
+Available in a variety of bold patterns and prints, this backpack offers stylish storage for everyday 
+
+use. The Everest 7 Pattern Printed Backpack is made from durable polyester fabric and features a medium 
+
+sized shape in a classic silhouette with a top grab handle and adjustable straps that make it 
+
+comfortable to carry. Detailed with a zip around main compartment, this backpack offers plenty of 
+
+storage for school books or personal items, and it includes a separate front zipper pocket to hold 
+
+small items and frequently used accessories. A D-ring on the front provides a convenient way to add a 
+
+key clip or an extra pouch.
+
+
+Dakine 5
+BP 1 LAP 2
+Detail 27L Pack
+?PHP 3,918 
+
+Multiple pockets make it easy to organize all of your small accessories and portable gadgets inside 
+
+this roomy backpack from Dakine 5. The Dakine 5 Detail 27L Pack is made from polyester fabric with faux 
+
+suede accents and a Dakine 5 logo patch on the front. This backpack features a roomy main compartment 
+
+with a padded laptop sleeve and plenty of room for school books and folders or extra clothing layers, a 
+
+secondary zip around compartment with organizer pockets to hold your cell phone, pens, keys, and other 
+
+small items, and an exterior zipper pocket for frequently used accessories. Adjustable, padded shoulder 
+
+straps and a sternum strap make it comfortable to carry for all day use
+
+
+Fjallraven 9
+BP 1 LAP 2
+Rucksack No.21 Medium
+?PHP 10,079 
+
+Classic backpack made from strong, waxed fabric with details in natural-toned leather. The main 
+
+compartment has pockets for a computer and sitting pad.
+
+Oakley 21
+BP 1 LAP 2
+Gearbox LX Backpack
+i ?PHP 6,913  
+?PHP 5,991 
+
+The Gearbox LX Backpack features a top-loading main compartment and front-access stash pocket with 
+
+organization panel for the secure storage and transport of the essentials you'll need throughout the 
+
+day. Padded back panels and shoulder straps provide comfortable carrying, while a dedicated zip pocket 
+
+stores your laptop. Designed with a fleece-lined eyewear pocket and dual side pockets, this carry-all 
+
+Oakley 21 backpack gives you quick access to the items you’re always using.
+
+
+
+Penguin 25
+BP 1 LAP 2
+Peterson 9 Pocket Laptop/Tablet Backpack
+i ?PHP 11,523  
+?PHP 4,436 
+
+Stylish business laptop backpack made with durable nylon. With two main compartments and 7 additional 
+
+accessories compartments, this backpack has enough room for all your business essentials. Travel in 
+
+comfort with padded shoulder straps and a padded mesh back panel. When moving through the airport, use 
+
+the trolley handle pass-through strap to rest the backpack upon luggage.
+
+
+Fila 8
+BP 1 SP 5 LAP 2
+Duel Tablet and Laptop Backpack
+i ?PHP 2,880  
+?PHP 1,209 
+
+
+Keep your gear or school supplied in one place in this 6 pocket tablet and laptop backpack
+
+
+JanSport 16
+BP 1 LAP 2
+Agave Laptop Backpack
+?PHP 4,033 
+
+Make the daily commute to school with your laptop, tablet, books, and small accessories organized 
+
+neatly inside this backpack from JanSport 16. The JanSport 16 Agave backpack is made from durable 
+
+polyester dobby fabric and features a classic shape with multiple compartments for organization and 
+
+AirCore shoulder straps that offer comfort for all day use. This backpack has two large main 
+
+compartments and includes a padded sleeve for your laptop and iPad or 3 liter hydration system, a quick 
+
+access loft pocket, dual side water bottle pockets, and a front organizer compartment loaded with 
+
+pockets for your cell phone, pens, keys, mp3 player, and other small items. Other features of this pack 
+
+include a fully padded back panel, a front access zipper pocket, and side compression straps.
+
+
+Under Armour 32
+BP 1 SP 5 LAP 2
+Recruit Backpack
+?PHP 3,744 
+
+
+Loaded with pockets to hold all of your gear, this backpack is perfect for everyday travel. The Under 
+
+Armour 32 Recruit Backpack is made from durable polyester fabric with an abrasion resistant bottom 
+
+panel and features a large shape with interior and exterior storage pockets and padded HeatGear® 
+
+shoulder straps that make it comfortable to carry. This backpack includes a roomy main compartment, a 
+
+soft lined laptop sleeve, two side water bottle pockets, and a front organizer compartment with a key 
+
+clip and slip pockets to hold small accessories. A water repellent valuables pocket on the front panel 
+
+provides safe and convenient storage for your cell phone, sunglasses, or other personal items
+
+
+Laurex 20 20
+BP 1 LAP 2
+Laptop Backpack fits up to 17" Laptop
+?PHP 5,185 
+
+Carry all your work, school or play essentials in graphic style in the Laurex 20 20 Laptop Backpack. 
+
+This cool pack for women features a roomy interior with a padded 17" laptop computer compartment, plus 
+
+plenty of room for your books, binders, folders, and other large gear. A full organizational panel 
+
+offers pen/lipstick loops, card slots, and an open pocket for quick access to your cell phone. Exterior 
+
+zippered pockets provide extra storage or stow last-minute items, and a flat pocket for documents is 
+
+hidden by the flap. The Laurex 20 20 Laptop Backpack has a heavy duty zipper and a net in a pocket 
+
+which serves as a water bottle holder. A handle on the top allows you to carry it without putting it 
+
+on, and a padded back panel and shoulder straps make this the perfectly comfortable everyday pack for 
+
+women
+
+
+SwissGear 29 Travel Gear
+BP 1 LAP 2
+1900 Scansmart TSA Laptop Backpack - 19" eBags Exclusive
+i ?PHP 7,490  
+?PHP 3,744 
+
+Exclusive to eBags, this backpack offers a stylish look and makes air travel a little bit easier. The 
+
+SwissGear 29 Travel Gear 1900 Scansmart TSA Laptop Backpack - 19" eBags Exclusive is crafted from 
+
+durable ballistic polyester and features a well-constructed design with a checkpoint friendly laptop 
+
+compartment, an Airflow back system for easy carrying, and multiple pockets for storage and 
+
+organization. Detailed with contoured shoulder straps that make it comfortable to carry, this TSA-
+
+approved backpack includes a protective laptop compartment, accordion file holders for books, binders, 
+
+and documents, and a convenient organizer to hold all sorts of small items and personal accessories.
+
+
+
+Everest 7
+BP 1
+Jungle Camo Classic Backpack
+?PHP 1,152 
+
+The Everest 7 Jungle Camp Classic Backpack gives you just the right amount of space to be able to carry 
+
+all of your essentials, comfortably and conveniently on your back. And the wonderful design makes it a 
+
+pleasure to wear with your casual clothes. Features include: A classic design, padded shoulder straps, 
+
+multiple pockets for organization, a zip around enclosure, and a keyring. The Everest 7 Jungle Camo 
+
+Classic Backpack comes with a 60 day warranty against all manufacturer's defects from date of purchase. 
+
+You will enjoy its convenient polyester construction which makes it easy to clean and care for.
+
+
+JanSport 16
+BP 1
+SuperBreak Backpack
+?PHP 2,068 
+
+With a classic look that never goes out of style, this backpack is perfect for day to day casual 
+
+travel. The JanSport 16 SuperBreak Backpack is made from durable polyester fabric and features a large 
+
+shape with a spacious main compartment that offers ample storage for books and other bulky items. As 
+
+JanSport 16's #1 best-selling bag, this backpack includes a front utility pocket to hold personal items 
+
+and school supplies, a web haul handle for easy lifting, a partially padded back panel, and padded 
+
+shoulder straps that make it comfortable to carry. Available in a variety of solid colors and eye-
+
+catching prints, it's easy to find a backpack in a color that perfectly fits your sense of style.
+
+
+J World 14 14 New York
+BP 1 LAP 2
+Cornelia Laptop Backpack
+i ?PHP 2,304  
+?PHP 1,613 
+
+The J World 14 14 Cornelia Backpack is a lovely little bag to bring with you to school or to a friend's 
+
+house. It features: Padded back and shoulder straps, side mesh pockets for water bottles, padded mesh 
+
+grip handle and roomy main compartment. Made of polyester, this backpack is easy to care for and comes 
+
+with a 1 year manufacturer's warranty against defects. Be sure to get the J World 14 14 Cornelia 
+
+Backpack if you are looking for a cute, feminine bag. Color of bag may be a bit lighter than pictured 
+
+in the actual photograph.
+
+
+Dakine 5
+BP 1 LAP 2
+Prom Pack
+?PHP 3,166 
+
+Get your style on when you're on the go toting your essentials in the Dakine 5 Prom Pack backpack, a 
+
+compact and feminine pack for everyday or overnight use! This pretty pack, fit for a princess, features 
+
+a large main compartment with a padded 14” laptop sleeve, an organizer pocket, a deployable water 
+
+bottle pocket, and an insulated cooler pocket. It even has a plush, lined sunglasses pocket! Available 
+
+in a variety of graphic patterns and colors, the Dakine 5 Prom Pack is perfect for days at the beach or 
+
+pool or for back to school!
+
+
+Herschel 11 Supply Co. 11
+BP 1 LAP 2
+Retreat Laptop Backpack - 15"
+?PHP 4,608 
+
+
+With a classic look that never goes out of style, this vintage inspired backpack offers relaxed style 
+
+and plenty of storage for the daily commute to school or occasional casual travel. The Herschel 11 
+
+Retreat backpack is made from durable polyester fabric and features a simple shape with contrast faux 
+
+leather buckled accent straps, a Herschel 11 logo patch on the front, and contoured, padded shoulder 
+
+straps that make it comfortable to carry. This backpack has a medium sized main compartment with a 
+
+reinforced bottom for added stability, a cinch top closure for added security, and a fully lined 
+
+interior. The interior includes a padded laptop sleeve while the exterior offers a front slip pocket 
+
+for added storage
+
+
+
+Case Logic 4
+BP 1 LAP 2
+16" Laptop Backpack
+?PHP 3,168 
+
+Keep your laptop computer well-protected and your other school or office essentials well-organized in 
+
+the Case Logic 4 16" Laptop Backpack. This lightweight polyester pack contains an integrated laptop 
+
+computer compartment, plus plenty of room for your files, folders, and other necessities. A zippered 
+
+safety pocket secures your passport, airline ticket, or cash. A front organizational panel stores your 
+
+cell phone, iPod, power cords, accessories, and office supplies, and side zippered pockets offer quick 
+
+access to water bottles or other need-now items. A felt-like, scratch-resistant pocket is ideal for 
+
+protecting sunglasses or a touch-screen phone, and the Case Logic 4 16" Laptop Backpack has an 
+
+innovative strap management system which keeps excess strap material rolled up, secured in place, and 
+
+out of your way
+
+
+JanSport 16
+BP 1 LAP 2
+Baughman Laptop Backpack
+?PHP 3,451 
+
+
+Carry your essentials for school or casual travel inside this classic rucksack from JanSport 16. The 
+
+JanSport 16 Baughman backpack is made from cotton canvas fabric and features a simplistic design with a 
+
+faux leather bottom, faux leather trim, a fully padded back panel, and mesh lined and padded shoulder 
+
+straps. This backpack has a medium sized main compartment with internal sleeves to hold your laptop and 
+
+tablet, a bottom zipper pocket, an organizer pocket, and a removable storage pouch that can be used to 
+
+hold personal items or cords and chargers. This backpack is available in a variety of colors and prints 
+
+to suit your personal style.
+
+
+Kipling
+BP 1
+Challenger II Backpack
+?PHP 5,416 
+
+Go back to school or out adventuring with your essentials neatly stowed in the Kipling 18Challenger II. 
+
+This lightweight, durable fabric backpack has a two way zip-round entry into its spacious main 
+
+compartment, perfect for storing your books, binders, and folders, or your change of clothing, shoes, 
+
+and hiking or day-tripping gear. Its interior includes a zippered pocket for keeping valuables safe and 
+
+secure, a slide pocket, a key fob, and three pen slots, and an additional zippered compartment provides 
+
+extra storage space. An exterior hidden top zip pocket offers quick access, and two exterior side 
+
+pockets with Velcro closures hold your wallet, cell phone, water bottles, or a small umbrella. The 
+
+Kipling 18Challenger II has padded, adjustable shoulder straps and a top carry handle, and it comes 
+
+with the trademark Kipling 18hanging monkey keychain charm.
+
+
+JanSport 16
+BP 1 LAP 2
+Right Pack Expressions
+?PHP 3,745 
+
+Tote your laptop computer and your other everyday essentials with casual, hands-free comfort in the 
+
+JanSport 16 Right Pack Expressions. This lightweight and durable polyester backpack features a compact 
+
+design with a graphic screen-print pattern and logo accents, and it's available in several colors. It 
+
+boasts a spacious, zippered main compartment with a portable PC compartment and plenty of room for your 
+
+files or folders; and its front gusseted, zippered compartment includes organizational pockets, slots, 
+
+and sleeves. Its open side pockets offer quick access to your water bottle and cell phone or other 
+
+frequently-needed items, and the JanSport 16 Right Pack Expressions comes with padded, adjustable 
+
+shoulder straps for your carrying comfort
+
+
+Fossil 10 10
+BP 1
+Estate Backpack
+i ?PHP 5,646  
+?PHP 4,320 
+
+
+Don't make a move this season without our Estate casual backpack. Made from durable materials with 
+
+expertly placed pockets, this dynamic design is ideal for carting your daily and travel accessories.
+
+Alienware 2
+BP 1 LAP 2
+Alienware 2 Vindicator Backpack - 14"
+i ?PHP 7,777  
+?PHP 4,608 
+
+Carry your Alienware 2 laptop and other essentials to and from work or school inside this sporty 
+
+backpack from Mobile Edge. The Mobile Edge Alienware 2 Vindicator Backpack - 14" is made from high-
+
+density nylon fabric and features a large shape with a weather resistant non-slip base and a molded and 
+
+vented back panel that offers incredible comfort. This backpack features three large main compartments 
+
+and includes a padded laptop compartment, a soft padded pocket for your iPad or tablet, pockets for 
+
+files and documents, and zippered pockets to hold small accessories. A toggle strap provides a place to 
+
+attach your headphones so that you can access them easily when you're on the go.
+
+
+
+
+J World 14 14 New York
+BP 1
+Oz School Backpack
+i ?PHP 2,304  
+?PHP 2,246 
+
+Available in a variety of bold graphic prints, this classic backpack offers style and storage for the 
+
+daily commute to school or occasional day trips around town. The J World 14 14 Oz backpack is made from 
+
+durable HP Duraceltex and polyester fabrics and features a back cushion and ergonomic S-shaped shoulder 
+
+straps for all day carrying comfort. This backpack has a roomy main compartment to hold books, folders, 
+
+or extra layers and a front zippered pocket to hold your cell phone, pens, keys, school supplies, or 
+
+other small accessories. Exterior side pockets offer extra storage for items that you need to access 
+
+quickly when you're on the go
+
+
+Dickies 6
+BP 1
+Student Backpack
+i ?PHP 2,304  
+?PHP 1,728 
+
+
+Carry your books and personal items to and from school inside this classic student backpack from 
+
+Dickies 6. The Dickies 6 Student Backpack is made from polyester fabric and features a simple, 
+
+traditional design with a rounded top edge, a fully padded back panel, and S curved shoulder straps 
+
+that make it comfortable to carry. Available in a wide range of bright colors and eye-catching prints, 
+
+this backpack has a medium sized main compartment to hold books and folders, a front accessory pocket 
+
+to hold small items and school supplies, and a slip in side pocket to hold an umbrella or a water 
+
+bottle.
+
+Fossil 10 10 10
+Graham Messenger 3
+?PHP 8,527  
+?PHP 6,798
+
+A man on-the-go needs something in his back pocket (or over his shoulder) to carry him through the day. 
+
+In our opinion, the Graham messenger fits the bill—in lighter-weight fabric for spring and extra room 
+
+for his laptop.
+
+
+Bellino 3 3
+Urban Messenger 3
+?PHP 2,470  
+?PHP 1,437 
+
+Add a stylish touch to your daily commute with this two-tone colorblocked messenger bag from Bellino 3. 
+
+Made from durable poly/canvas fabric, the Bellino 3 Urban Messenger bag features an urban-inspired 
+
+design with a flap front silhouette, two secure buckle closures, and multiple pockets for storage and 
+
+organization. Detailed with a roomy main compartment, this messenger bag includes a padded laptop 
+
+sleeve, a zipper pocket to hold accessories, a side mesh water bottle pocket, and a vertical zipper 
+
+pocket to hold your iPad or tablet. Beneath the flap, an organizer panel with a pen sleeve, card slots, 
+
+and slip pockets offers convenient storage for all of your frequently used accessories.
+
+
+
+Laurex 20 20 20
+17" Laptop Messenger Bag 3
+?PHP 4,608 
+
+
+Carry your laptop computer and other daily business or school essentials in the lightweight Laurex 20 
+
+20 17" Laptop Messenger Bag. This water-resistant nylon bag boasts a padded laptop computer 
+
+compartment, plus room for your folders and files. A large zippered front pocket provides organization 
+
+for your pens and pencils, cell phone, and PDA, and an additional full-sized rear exterior pocket holds 
+
+magazines or documents. An adjustable shoulder strap and a padded, removable non-slip shoulder pad make 
+
+the Laurex 20 20 17" Laptop Messenger Bag the perfectly comfortable messenger!
+
+
+Everest 7
+Large Cotton Canvas Messenger Bag 3
+?PHP 2,302  
+?PHP 1,440 
+
+Go off to work or back to school with your essentials neatly stowed in the affordable Everest 7 Large 
+
+Cotton Canvas Messenger Bag. This bag features flapover construction with hook and loop closures, and 
+
+opens to reveal a spacious main compartment generous enough to accommodate your laptop computer and 
+
+personal items or your books, binders, folders, and files. Two open pockets under its flap provide 
+
+additional storage space, and side slip pockets hold water bottles to help you stay cool and refreshed 
+
+throughout the day. The earth-friendly, 100% cotton Everest 7 Large Cotton Canvas Messenger Bag has a 
+
+zippered interior pouch for keeping valuables safe and secure and an adjustable shoulder strap for your 
+
+comfort.
+
+Vagabond Traveler 33 Canvas 14" Laptop Messenger Bag 3
+
+?PHP 6,914
+?PHP 2,880 
+
+
+Head off to work or school with your laptop and other must-haves packed inside this casual messenger 
+
+bag from Vagabond Traveler 33. The Vagabond Traveler 33 Casual Style Canvas Laptop Messenger Bag is 
+
+made from durable canvas fabric and features a small shape with a relaxed silhouette, two top handles, 
+
+and an adjustable, removable strap that can be carried over the shoulder or slung across the body for 
+
+hands-free travel. Trimmed with contrast color accents that give it a cool, casual look, this messenger 
+
+bag features a zip top main compartment with a protective laptop pocket and slip pockets to hold 
+
+accessories. A front flap pocket and a front zipper pocket provide added storage for small items and 
+
+personal essentials.
+
+
+Piel 26 Four-Section Urban Laptop Messenger 3
+i
+?PHP 27,077
+?PHP 16,938 
+
+
+Keep your laptop computer stylishly well-protected while you're on-the-go in the Piel 26 Four-Section 
+
+Urban Laptop Messenger. This soft, smooth, supple, and luxurious naked leather messenger bag features 
+
+flap-over construction and bright accents, and it's available in several colors. Its spacious, lined 
+
+interior contains a fully-padded laptop computer compartment; a file pocket; and an organizational 
+
+panel with pen loops, a full-length zippered pocket, a small zippered valuables pocket, and a flap 
+
+pocket. The Piel 26 Four-Section Urban Laptop Messenger comes with an adjustable shoulder strap for 
+
+your carrying comfort.
+
+
+Travelon 31 Anti-Theft Urban N/S Messenger Bag 3
+i
+?PHP 4,320
+
+Keep your most important items safe when you're on the go with this anti-theft messenger bag from 
+
+Travelon 31. The Travelon 31 Anti-Theft Urban N/S Messenger Bag is made from durable nylon fabric and 
+
+features slash-proof construction with an adjustable cut-proof shoulder strap and a locking main 
+
+compartment. This messenger bag has a flap front design with multiple interior compartments that 
+
+include a pocket for your iPad or tablet, an RFID card slot to protect against identity thieves, and a 
+
+pocket for your cell phone. A pen loop and a zipper pocket underneath the flap offer added storage for 
+
+small items while an expansion pocket provides storage for a water bottle.
+
+
+Timbuk2 30 Commute Laptop Messenger 3
+?PHP 6,856 
+
+The best classic laptop messenger bag for hauling your laptop, iPad, lunch and layers to class, the 
+
+office or that meeting two timezones away.
+
+
+Visconti 34 Leather Distressed Messenger Bag Harvard Collection 3
+i
+?PHP 10,370
+?PHP 8,468
+
+
+Distressed Leather messenger bag with double contrast stitching.
+
+
+Jack mason League 15 NCAA Gridiron Messenger Bag 3
+i
+?PHP 15,843
+?PHP 3,744 
+
+NCAA Gridiron Messenger Bag
+
+*****************************************************  SP 5ORTS
+
+Russell 28 Eco Friendly 22" Roll Bag 5
+i
+?PHP 5,127
+?PHP 2,592 
+
+
+Sporty striped handles add a stylish touch to this classic athletic duffel bag from Russell 28. The 
+
+Russell 28 Eco Friendly 22" Roll Bag is made from cotton canvas fabric and features a small barrel 
+
+shaped design with striped webbing carry handles, a striped haul handle on one end, and a detachable 
+
+striped shoulder strap that can be carried on the shoulder or slung across the body. This duffel bag 
+
+has a roomy main compartment with a top zipper closure that offers storage for your essentials for a 
+
+trip to the gym, an overnight getaway, or carry-on necessities. A front zipper pocket offers convenient 
+
+storage for your cell phone, keys, or other small accessories
+
+
+Adidas 1 Defender Duffel II - Medium 5
+?PHP 2,016 
+
+Stow your athletic gear or fitness essentials stylishly in the Adidas 1 Defender Duffel Medium. This 
+
+lightweight and durable dobby polyester gym bag is available in several colors and features Adidas 1 
+
+logo screen-printing. It boasts a spacious, zippered main compartment with a zippered pocket for 
+
+keeping valuables safe and secure plus plenty of room for your workout wear, uniform, sporting 
+
+equipment, change of clothing, toiletries, and anything else you need for your exercise routine, for 
+
+practice, or for the big game. An end compartment contains a ventilated wet/dry shoe compartment, and 
+
+the Adidas 1 Defender Duffel Medium has wrapped webbing haul handles and a padded, non-slip adjustable 
+
+shoulder strap for carrying comfort and versatility.
+
+
+Olympia 22 USA 21" Fashion Sports Duffel 5
+i
+?PHP 2,765
+?PHP 1,670
+
+The Fashion Sports Duffel is made of printed polyester. It has a U-top opening to roomy main 
+
+compartment
+
+
+Fila 8 Cypress Small Sport Duffel Bag 5
+i
+?PHP 2,305
+?PHP 1,382 
+
+Carry your gear to the gym or to training in this compact design sport duffel bag. 4 compartments 
+
+provide enough room for training clothes, shoes, water bottle, and other accessories. EXOVENT mesh 
+
+ventilation pockets helps to keep your bag from smelling of foul odors. Includes a comfort carrying 
+
+shoulder strap. 11" x 19" x 12"
+
+
+Under Armour 32 Undeniable Medium Duffle 3.0                     5
+i
+?PHP 2,592
+?PHP 2,246 
+
+
+
+Bellino 3 Turbo Sports Duffle 5
+i
+?PHP 3,569
+?PHP 2,016 
+
+Pack your clothing and other gear for casual travel inside this sporty duffle bag from Bellino 3. The 
+
+Bellino 3 Turbo Sports Duffle bag is made from durable ripstop polyester fabric and features a large 
+
+shape with multiple storage pockets, two top handles, and an adjustable, detachable shoulder strap. The 
+
+roomy main compartment secures with a zip top closure and includes a reinforced board at the bottom for 
+
+added stability. A vented side shoe pocket and a zippered side pocket for laundry offer convenient 
+
+storage for dirty items, while two front zipper pockets provide easy access to small items such as your 
+
+cell phone and keys.
+
+
+Hot-Z 13 Golf Bags 4.5 Cart Bag 5
+i
+?PHP 7,777
+?PHP 5,761 
+
+9.5 inch 14-way graphite friendly separator top with putter pit and handles, full length club/shaft 
+
+dividers, 8 zippered pockets including a velour lined valuables pocket & bottle compartment, padded 
+
+rear position single carry strap with elastic band to secure strap, pen sleeve, towel ring with Velcro 
+
+glove attachment, umbrella and tee holder, scorecard sleeve & rain hood cover, lightweight dobby nylon.
+
+
+Olympia 22 USA 30" Sports Duffel 5
+?PHP 2,304 
+
+Carry your clothing and essentials for casual travel inside this sporty two-tone duffel bag from 
+
+Olympia 22. The Olympia 22 30" Sports Duffel bag is made from ripstop polyester fabric and features an 
+
+extra-large shape with contrast color accents and trim, a small front logo, two top carry handles with 
+
+buckle straps, and a detachable, adjustable shoulder strap that offers versatile carrying options. This 
+
+duffel bag features a zip top main compartment that offers plenty of storage for clothing, shoes, and 
+
+bulky items as well as a front zipper pocket to hold your cell phone, keys, or other small accessories 
+
+that you need to keep within easy reach.
+
+
+Adidas 1 Squad III Duffel 5
+?PHP 2,592 
+
+Pack your gear for team practice or a workout at the gym inside this sporty duffel bag from Adidas 1. 
+
+The Adidas 1 Squad III Duffel bag is made from durable polyester fabric and features a unique design 
+
+with a laser-cut freshPAK ventilated tunnel to hold shoes. Detailed with two top handles and an 
+
+adjustable shoulder strap with a clip closure, this duffel bag includes a roomy main compartment, an 
+
+internal zippered mesh pocket, open mesh pockets, and a tricot-lined pocket to hold your cell phone or 
+
+other media devices. With a key fob and a front zipper pocket for added storage, this sporty duffel is 
+
+specifically designed with the female athlete in mind.
+
+
+Adidas 1 Barricade IV Tour 6 Racquet Bag 5
+?PHP 5,185 
+
+
+Hit the tennis courts with your personal accessories and up to six racquets stashed inside this sporty 
+
+duffel bag from Adidas 1. The Adidas 1 Barricade IV Tour 6 Racquet Bag is made from dobby polyester 
+
+fabric and features a large shape with a freshPak? ventilated pocket to hold wet or dirty items, a 
+
+thermal lined temperature controlled pocket to prevent your tennis racquet strings from warping in the 
+
+heat, and a tricot-lined media pocket to hold your cell phone. Detailed with multiple logos and an 
+
+Adidas 1 kite tag, this duffel features padded haul handles, an EVA foam shoulder strap with Climacool® 
+
+technology, and padded backpack straps that offer versatile carrying options.
+
+KR Strikeforce 19Bowling LR3 Triple Roller Bag 5
+?PHP 10,367 
+
+Contrast color accents add an eye-catching touch to this three ball roller bag from KR Strikeforce 
+
+19Bowling. The KR Strikeforce 19Bowling LR3 Triple Roller Bag is made from durable material and 
+
+features a large shape with a compartmentalized interior, exterior pockets for added storage, a 
+
+retractable locking pull handle, and smooth Kruse urethane wheels that make it easy to maneuver. 
+
+Detailed with retaining straps to hold your bowling balls in place, this roller bag includes a roomy 
+
+main compartment, a top pocket to hold clothing, a shoe compartment that can hold up to a pair of size 
+
+15 shoes, and accessory pockets to hold personal items and other essentials.
+
+
+************************************************ OUTDOOR
+
+
+Highland Tactical 12 Vantage Tactical Backpack with All-Around Compression Straps 4
+i
+?PHP 4,608
+?PHP 2,880 
+
+The Vantage Tactical Backpack gives you the strategic advantage you have been looking for. This pack is 
+
+tight and compact and holds your gear close. With an all-around adjustable compression system, sternum, 
+
+and waist straps, you'll have the ability to perform those high velocity vertical and lateral movements 
+
+with ease. Two main compartment and two accessory pockets give you versatility to customize your gear 
+
+and your trip the way you want. The MOLLE webbing surrounding the bag helps you expand as needed.
+
+
+
+Everest 7 Hiking Pack 4
+i
+?PHP 3,684
+?PHP 1,382 
+
+Embark on your next rugged adventure with all of your essentials packed inside this hiking backpack 
+
+from Everest 7. The Everest 7 Hiking Pack is made from durable polyester and features a large shape and 
+
+a multi-compartment design with a snap buckle closure, a rugged bottom, and multiple pockets for 
+
+organization. In addition to the top-loading main compartment, this pack includes zippered side 
+
+pockets, a front bungee, and an attachment ring for accessories or gear pouches. Available in a variety 
+
+of colors to suit your mood and style, this backpack is perfect for long hikes, camping trips, weekend 
+
+getaways, and all sorts of outdoor excursions.
+
+
+
+
+Kelty 17 Redwing Reserve Hiking Backpack 4
+?PHP 9,215 
+
+Every detail has been considered with the Redwing Reserve; from the stylish fabric and design to the 
+
+travel-friendly features, the Redwing Reserve is a pack to be savored.
+
+
+
+Everest 7
+Deluxe Hiking Pack 4
+i ?PHP 5,758  
+?PHP 3,053 
+
+
+Head out for your next rugged expedition with all of your gear packed inside this sporty backpack from 
+
+Everest 7. The Everest 7 Deluxe Hiking Pack is made from durable polyester fabric and features a large 
+
+shape with an external metal frame, multiple pockets for storage and organization, and a heavily padded 
+
+waist belt and back panel that makes it comfortable to carry even when loaded with heavy gear. This 
+
+backpack includes a top loading main compartment, a front loading bottom compartment, and several 
+
+exterior zipper pockets. Other features of this backpack include compression straps and a front bungee 
+
+organizer system for added storage.
+
+
+Osprey 23 Talon 33 Hiking Pack 4
+?PHP 8,066 
+
+The Talon 33 is lighter, nimbler and more comfortable than ever. With an updated AirScape™ backpanel to 
+
+keep you dry, a continuous hipbelt wrap for incredible comfort and a suspension system that stabilized 
+
+loads for dynamic activities, this is the ideal pack for minimalist backpacking, day hikes and more.
+
+
+Red Rock 27 Outdoor Gear Deluxe Rifle Backpack 4
+i
+?PHP 7,489
+?PHP 5,758 
+
+
+Carry your rifle to and from the gun range or pack your gear for a hunting trip inside this deluxe 
+
+backpack from Red Rock 27 Outdoor Gear. The Red Rock 27 Outdoor Gear Deluxe Rifle Backpack is made from 
+
+polyester fabric and features a large shape with padded construction, padded side walls that allow you 
+
+to carry two or three firearms, and thickly padded backpack straps that make it comfortable to carry. 
+
+This backpack is detailed with a side zipper that assists in top loading, a removable waist strap, and 
+
+a front molle webbing platform that makes it easy to attach pouches and additional gear.
+
+
+
+Red Rock 27 Outdoor Gear Engagement Pack 4
+i
+?PHP 3,744
+?PHP 2,878 
+
+With a rugged design and multiple pockets for storage, this backpack is perfect for all sorts of 
+
+outdoor adventures and expeditions. The Red Rock 27 Outdoor Gear Engagement Pack is made from polyester 
+
+fabric and features a large shape and a multi-compartment design with a padded back panel, a composite 
+
+internal frame, a removable padded waist strap, and adjustable contoured shoulder straps that make it 
+
+comfortable to carry. This hydration compatible backpack includes a top port hole for your bladder 
+
+tube, a removable molle butt pouch, molle webbing for adding attachments, and a front zipper pocket 
+
+that offers quick access to frequently used items.
+
+
+Everest 7 Outdoor Waist Pack with Bottle Holders 4
+i
+?PHP 2,763
+?PHP 1,843 
+
+Outdoor Waist Pack with Bottle Holders
+
+
+Outdoor Products 24 Skyline Internal Frame Pack 4
+?PHP 4,263 
+
+
+Stay refreshed and comfortably well-organized during your outdoor adventure carrying your necessities 
+
+in the Outdoor Products 24 Skyline Internal Frame Pack. This lightweight and durable ripstop polyester 
+
+hydration-compatible backpack (equipment sold separately) features compact, contoured, two-tone styling 
+
+with bright, embroidered and screen-printed Outdoor Products 24 logo detailing. It boasts a spacious, 
+
+structured and lined main compartment with a convenient u-shaped, zippered opening and an internal 
+
+frame pack with a removable aluminum stay; and its vertical-zip front pocket offers additional storage 
+
+space. Its stretchy mesh side pockets provide quick access to frequently-needed things, and it comes 
+
+with padded, adjustable shoulder straps and an adjustable waist strap.
+
+************************************************
+
+
+
+

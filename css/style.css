@@ -1,0 +1,12 @@
+* {
+	
+}
+
+/*.custom-card-size {
+	width: 15vw;
+}*/
+
+.card-title,
+.card-subtitle {
+	text-align: center;
+}
