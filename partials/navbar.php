@@ -8,8 +8,10 @@
 	}
 
 ?>
-
-<nav class="navbar is-primary">
+<div class="navbar-extra">
+	
+</div>
+<nav class="navbar is-fixed-top is-primary">
 	<div class="navbar-brand">
 		<a href="" class="navbar-item">
 			Tuitt

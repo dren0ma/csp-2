@@ -1,15 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.7.4
+-- version 4.6.5.2
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 28, 2018 at 06:21 PM
--- Server version: 10.1.30-MariaDB
--- PHP Version: 7.1.13
+-- Generation Time: Jan 29, 2018 at 07:51 AM
+-- Server version: 10.1.21-MariaDB
+-- PHP Version: 7.1.2
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
-START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -281,8 +279,8 @@ INSERT INTO `items` (`itemId`, `name`, `brandId`, `description`, `price`, `img`)
 (4, 'Detail Pack', 5, 'Multiple pockets make it easy to organize all of your small accessories and portable gadgets inside this roomy backpack from Dakine. The Dakine Detail Pack is made from polyester fabric with faux suede accents and a Dakine logo patch on the front. This backpack features a roomy main compartment with a padded laptop sleeve and plenty of room for school books and folders or extra clothing layers, a secondary zip around compartment with organizer pockets to hold your cell phone, pens, keys, and other small items, and an exterior zipper pocket for frequently used accessories. Adjustable, padded shoulder straps and a sternum strap make it comfortable to carry for all day use.', '3918.00', 'assets/img/bags/backpack/dakinebacktabor.png'),
 (5, 'Rucksack No.21', 9, 'Classic backpack made from strong, waxed fabric with details in natural-toned leather. The main compartment has pockets for a computer and sitting pad.', '10079.00', 'assets/img/bags/backpack/fjallravenbackblack.png'),
 (6, 'Gearbox Backpack', 21, 'The Gearbox Backpack features a top-loading main compartment and front-access stash pocket with organization panel for the secure storage and transport of the essentials you\'ll need throughout the day. Padded back panels and shoulder straps provide comfortable carrying, while a dedicated zip pocket stores your laptop. Designed with a fleece-lined eyewear pocket and dual side pockets, this carry-all Oakley backpack gives you quick access to the items you\'re always using.', '6913.00', 'assets/img/bags/backpack/oakleybackblack.png'),
-(7, 'Peterson 9-Pocket Laptop/Tablet Backpack', 25, 'Stylish business laptop backpack made with durable nylon. With two main compartments and 7 additional accessories compartments, this backpack has enough room for all your business essentials. Travel in comfort with padded shoulder straps and a padded mesh back panel. When moving through the airport, use the trolley handle pass-through strap to rest the backpack upon luggage.', '11523.00', 'assets/img/bags/backpack/penguinbacknavy.png'),
-(8, 'Duel Tablet and Laptop Backpack', 8, 'Keep your gear or school supplied in one place in this 6 pocket tablet and laptop backpack.', '2880.00', 'assets/img/bags/backpack/filabackteal.png'),
+(7, 'Peterson 9-Pocket Backpack', 25, 'Stylish business laptop backpack made with durable nylon. With two main compartments and 7 additional accessories compartments, this backpack has enough room for all your business essentials. Travel in comfort with padded shoulder straps and a padded mesh back panel. When moving through the airport, use the trolley handle pass-through strap to rest the backpack upon luggage.', '11523.00', 'assets/img/bags/backpack/penguinbacknavy.png'),
+(8, 'Duel Backpack', 8, 'Keep your gear or school supplied in one place in this 6 pocket tablet and laptop backpack.', '2880.00', 'assets/img/bags/backpack/filabackteal.png'),
 (9, 'Agave Laptop Backpack', 16, 'Make the daily commute to school with your laptop, tablet, books, and small accessories organized neatly inside this backpack from JanSport. The JanSport Agave backpack is made from durable polyester dobby fabric and features a classic shape with multiple compartments for organization and AirCore shoulder straps that offer comfort for all day use. This backpack has two large main compartments and includes a padded sleeve for your laptop and iPad or 3 liter hydration system, a quick access loft pocket, dual side water bottle pockets, and a front organizer compartment loaded with pockets for your cell phone, pens, keys, mp3 player, and other small items. Other features of this pack include a fully padded back panel, a front access zipper pocket, and side compression straps.', '4033.00', 'assets/img/bags/backpack/jansportagavemutedgreen.png'),
 (10, 'Recruit Backpack', 32, 'Loaded with pockets to hold all of your gear, this backpack is perfect for everyday travel. The Under Armour Recruit Backpack is made from durable polyester fabric with an abrasion resistant bottom panel and features a large shape with interior and exterior storage pockets and padded HeatGear shoulder straps that make it comfortable to carry. This backpack includes a roomy main compartment, a soft lined laptop sleeve, two side water bottle pockets, and a front organizer compartment with a key clip and slip pockets to hold small accessories. A water repellent valuables pocket on the front panel provides safe and convenient storage for your cell phone, sunglasses, or other personal items.', '3744.00', 'assets/img/bags/backpack/underarmorbackblack.png'),
 (11, 'Laptop Backpack', 20, 'Carry all your work, school or play essentials in graphic style in the Laurex Laptop Backpack. This cool pack for women features a roomy interior with a padded 17\' laptop computer compartment, plus plenty of room for your books, binders, folders, and other large gear. A full organizational panel offers pen/lipstick loops, card slots, and an open pocket for quick access to your cell phone. Exterior zippered pockets provide extra storage or stow last-minute items, and a flat pocket for documents is hidden by the flap. The Laurex Laptop Backpack has a heavy duty zipper and a net in a pocket which serves as a water bottle holder. A handle on the top allows you to carry it without putting it on, and a padded back panel and shoulder straps make this the perfectly comfortable everyday pack for women.', '5185.00', 'assets/img/bags/backpack/laurexbackred.png');
@@ -432,67 +430,56 @@ ALTER TABLE `users`
 --
 ALTER TABLE `accounts`
   MODIFY `acctId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
-
 --
 -- AUTO_INCREMENT for table `accounttype`
 --
 ALTER TABLE `accounttype`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
-
 --
 -- AUTO_INCREMENT for table `brands`
 --
 ALTER TABLE `brands`
   MODIFY `brandId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
-
 --
 -- AUTO_INCREMENT for table `cart`
 --
 ALTER TABLE `cart`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `categories`
 --
 ALTER TABLE `categories`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
-
 --
 -- AUTO_INCREMENT for table `colors`
 --
 ALTER TABLE `colors`
   MODIFY `colorId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=90;
-
 --
 -- AUTO_INCREMENT for table `items`
 --
 ALTER TABLE `items`
   MODIFY `itemId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
-
 --
 -- AUTO_INCREMENT for table `item_categories`
 --
 ALTER TABLE `item_categories`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `item_colors`
 --
 ALTER TABLE `item_colors`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `promos`
 --
 ALTER TABLE `promos`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
   MODIFY `userId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
-
 --
 -- Constraints for dumped tables
 --
@@ -530,7 +517,6 @@ ALTER TABLE `item_categories`
 ALTER TABLE `item_colors`
   ADD CONSTRAINT `item_colors_ibfk_1` FOREIGN KEY (`colorId`) REFERENCES `colors` (`colorId`) ON UPDATE CASCADE,
   ADD CONSTRAINT `item_colors_ibfk_2` FOREIGN KEY (`itemId`) REFERENCES `items` (`itemId`) ON UPDATE CASCADE;
-COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

@@ -1,10 +1,46 @@
-* {
-	
+:root {
+	--main-color: #00d1b2;
+	/*#ffdd57*/
 }
 
-/*.custom-card-size {
-	width: 15vw;
-}*/
+.navbar-extra{
+	width: 100%;
+	min-height: 1.5rem;
+	left: 0;
+	top: 0;
+	background-color: grey;
+	position: fixed;
+	z-index: 30;
+
+}
+
+.navbar.is-fixed-top {
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 1.5rem;
+  z-index: 30;
+}
+
+html.has-navbar-fixed-top {
+  padding-top: 4.75rem;
+}
+
+.panel-heading {
+	background-color: var(--main-color);
+}
+
+.asss {
+	text-align: left;
+}
+
+.card {
+	height: 100%;
+}
+
+.panel-font {
+	font-size: .8em;
+}
 
 .card-title,
 .card-subtitle {
