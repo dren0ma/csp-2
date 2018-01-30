@@ -12,9 +12,9 @@ $result = mysqli_query($dbcon, $sql);
 // verify username/password
 if(mysqli_num_rows($result) > 0){
 	$dbarray = mysqli_fetch_assoc($result);
-	$_SESSION['username'] = $username;
+	$_SESSION['username'] = $dbarray['username'];
 	$_SESSION['acctType'] = $dbarray['acctType'];
-	header('location: '.$_SERVER['HTTP_REFERER']);
+	header('location: index.php');
 
 }
 else {

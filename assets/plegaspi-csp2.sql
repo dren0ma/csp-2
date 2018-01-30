@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 29, 2018 at 07:51 AM
+-- Generation Time: Jan 30, 2018 at 08:58 AM
 -- Server version: 10.1.21-MariaDB
 -- PHP Version: 7.1.2
 
@@ -120,7 +120,7 @@ INSERT INTO `brands` (`brandId`, `brand`) VALUES
 
 CREATE TABLE `cart` (
   `id` int(11) NOT NULL,
-  `userId` int(11) NOT NULL,
+  `acctId` int(11) NOT NULL,
   `itemId` int(11) NOT NULL,
   `quantity` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -351,6 +351,7 @@ INSERT INTO `users` (`userId`, `firstName`, `lastName`, `address`, `email`) VALU
 --
 ALTER TABLE `accounts`
   ADD PRIMARY KEY (`acctId`),
+  ADD UNIQUE KEY `userId_2` (`userId`),
   ADD KEY `acctType` (`acctType`),
   ADD KEY `userId` (`userId`);
 
@@ -371,8 +372,8 @@ ALTER TABLE `brands`
 --
 ALTER TABLE `cart`
   ADD PRIMARY KEY (`id`),
-  ADD KEY `userId` (`userId`),
-  ADD KEY `itemId` (`itemId`);
+  ADD KEY `itemId` (`itemId`),
+  ADD KEY `cart_ibfk_3` (`acctId`);
 
 --
 -- Indexes for table `categories`
@@ -495,8 +496,8 @@ ALTER TABLE `accounts`
 -- Constraints for table `cart`
 --
 ALTER TABLE `cart`
-  ADD CONSTRAINT `cart_ibfk_1` FOREIGN KEY (`userId`) REFERENCES `users` (`userId`) ON UPDATE CASCADE,
-  ADD CONSTRAINT `cart_ibfk_2` FOREIGN KEY (`itemId`) REFERENCES `items` (`itemId`) ON UPDATE CASCADE;
+  ADD CONSTRAINT `cart_ibfk_2` FOREIGN KEY (`itemId`) REFERENCES `items` (`itemId`) ON UPDATE CASCADE,
+  ADD CONSTRAINT `cart_ibfk_3` FOREIGN KEY (`acctId`) REFERENCES `accounts` (`acctId`) ON UPDATE CASCADE;
 
 --
 -- Constraints for table `items`

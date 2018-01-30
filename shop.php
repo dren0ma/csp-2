@@ -18,7 +18,7 @@ require 'dbconnect.php';
 				</p>
 			</div>
 
-			<p class="panel-heading button is-fullwidth asss">Category</p>
+			<p class="panel-heading button is-fullwidth">Category</p>
 	<?php 
 	$sql = "SELECT * FROM categories";
 	$result = mysqli_query($dbcon, $sql);
@@ -101,13 +101,14 @@ require 'dbconnect.php';
 					</div>
 				</div>	 -->
 	<?php 
-	$sql = "SELECT name, description, price, img, brand
+	$sql = "SELECT itemId, name, description, price, img, brand
 			FROM items
 			JOIN brands ON items.brandId = brands.brandId";
 	$result = mysqli_query($dbcon, $sql);
 
 	while ($dbarray = mysqli_fetch_assoc($result)) {
-		$img = $dbarray['img'];	?>
+		$img = $dbarray['img'];	
+		$id = $dbarray['itemId']; ?>
 				<div class="column is-one-third custom-column-size">
 					<div class="card">
 						<div class="card-content ">
@@ -127,7 +128,8 @@ require 'dbconnect.php';
 									</div>
 								</div>
 								<div class="level-right">
-									<a class="button is-primary" type="button">
+									<a class="button is-primary" type="button" 
+									<?php echo "href='addtocart.php?itemId=$id&qty=1'>";?>
 										<span class="icon">
 											<i class="fas fa-shopping-cart"></i>
 										</span>
