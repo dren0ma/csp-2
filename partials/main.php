@@ -1,8 +1,8 @@
 <?php session_start(); ?>
 	
 <!DOCTYPE html>
-<html>
-<!-- class="has-navbar-fixed-top" -->
+<html class="has-navbar-fixed-top">
+
 <head lang="en">
 	<title><?php display_title(); ?></title>
 
@@ -23,7 +23,7 @@
 <body>
 
 	<?php 
-		require "partials/navbar.php";
+		require "partials/navbar2.php";
 		display_content();
 		require "partials/footer.php" 
 	?>

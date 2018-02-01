@@ -8,7 +8,7 @@
 	background-color: var(--main-color)!important;
 }
 
-.is-warning {
+.is-secondary {
 	background-color: var(--main-invert)!important;
 }
 
@@ -31,18 +31,22 @@
 	color: var(--main-color);
 }*/
 
-
-.card {
-	height: 100%;
-}
-
 .panel-font {
 	font-size: .8em;
 }
 
-.card-title,
-.card-subtitle {
-	text-align: center;
+.hero-nav {
+    background: url('../assets/img/texture.jpeg');
+    border-top: 10px solid var(--main-color);
+    border-bottom: 10px solid var(--main-color);
+}
+
+.hero.is-primary .navbar-menu {
+    background-color: transparent;
+}
+
+.nav-icons {
+    padding-right: 10px;
 }
 
 /*#form-login {
@@ -56,6 +60,46 @@
 .footer {
 	background-color: var(--secondary-color);
 }
+
+.logo {
+    position: absolute;
+    /*height: 500px;*/
+    top: 2rem;
+    left: 10rem;
+}
+.card {
+    height: 100%;
+}
+
+.card-title,
+.card-subtitle {
+    text-align: center;
+}
+
+/* card hover */
+.card-image {
+overflow: hidden;
+}
+
+.card:hover figure img {
+    transform: scale(1.2);
+}
+
+figure img {
+    transition: 0.6s ease;
+}
+
+
+.button-border-remove {
+    border: none;
+}
+
+.exit {
+    position: absolute;
+    z-index: 5;
+    opacity: 0.5;
+}
+
 
 
 /* The side navigation menu */

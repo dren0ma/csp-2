@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 30, 2018 at 08:58 AM
+-- Generation Time: Feb 01, 2018 at 09:02 AM
 -- Server version: 10.1.21-MariaDB
 -- PHP Version: 7.1.2
 
@@ -283,7 +283,8 @@ INSERT INTO `items` (`itemId`, `name`, `brandId`, `description`, `price`, `img`)
 (8, 'Duel Backpack', 8, 'Keep your gear or school supplied in one place in this 6 pocket tablet and laptop backpack.', '2880.00', 'assets/img/bags/backpack/filabackteal.png'),
 (9, 'Agave Laptop Backpack', 16, 'Make the daily commute to school with your laptop, tablet, books, and small accessories organized neatly inside this backpack from JanSport. The JanSport Agave backpack is made from durable polyester dobby fabric and features a classic shape with multiple compartments for organization and AirCore shoulder straps that offer comfort for all day use. This backpack has two large main compartments and includes a padded sleeve for your laptop and iPad or 3 liter hydration system, a quick access loft pocket, dual side water bottle pockets, and a front organizer compartment loaded with pockets for your cell phone, pens, keys, mp3 player, and other small items. Other features of this pack include a fully padded back panel, a front access zipper pocket, and side compression straps.', '4033.00', 'assets/img/bags/backpack/jansportagavemutedgreen.png'),
 (10, 'Recruit Backpack', 32, 'Loaded with pockets to hold all of your gear, this backpack is perfect for everyday travel. The Under Armour Recruit Backpack is made from durable polyester fabric with an abrasion resistant bottom panel and features a large shape with interior and exterior storage pockets and padded HeatGear shoulder straps that make it comfortable to carry. This backpack includes a roomy main compartment, a soft lined laptop sleeve, two side water bottle pockets, and a front organizer compartment with a key clip and slip pockets to hold small accessories. A water repellent valuables pocket on the front panel provides safe and convenient storage for your cell phone, sunglasses, or other personal items.', '3744.00', 'assets/img/bags/backpack/underarmorbackblack.png'),
-(11, 'Laptop Backpack', 20, 'Carry all your work, school or play essentials in graphic style in the Laurex Laptop Backpack. This cool pack for women features a roomy interior with a padded 17\' laptop computer compartment, plus plenty of room for your books, binders, folders, and other large gear. A full organizational panel offers pen/lipstick loops, card slots, and an open pocket for quick access to your cell phone. Exterior zippered pockets provide extra storage or stow last-minute items, and a flat pocket for documents is hidden by the flap. The Laurex Laptop Backpack has a heavy duty zipper and a net in a pocket which serves as a water bottle holder. A handle on the top allows you to carry it without putting it on, and a padded back panel and shoulder straps make this the perfectly comfortable everyday pack for women.', '5185.00', 'assets/img/bags/backpack/laurexbackred.png');
+(11, 'Laptop Backpack', 20, 'Carry all your work, school or play essentials in graphic style in the Laurex Laptop Backpack. This cool pack for women features a roomy interior with a padded 17\' laptop computer compartment, plus plenty of room for your books, binders, folders, and other large gear. A full organizational panel offers pen/lipstick loops, card slots, and an open pocket for quick access to your cell phone. Exterior zippered pockets provide extra storage or stow last-minute items, and a flat pocket for documents is hidden by the flap. The Laurex Laptop Backpack has a heavy duty zipper and a net in a pocket which serves as a water bottle holder. A handle on the top allows you to carry it without putting it on, and a padded back panel and shoulder straps make this the perfectly comfortable everyday pack for women.', '5185.00', 'assets/img/bags/backpack/laurexbackred.png'),
+(12, 'Scansmart TSA Backpack', 29, 'This backpack offers a stylish look and makes air travel a little bit easier. The SwissGear Travel Gear Scansmart TSA Laptop Backpack is crafted from durable ballistic polyester and features a well-constructed design with a checkpoint friendly laptop compartment, an Airflow back system for easy carrying, and multiple pockets for storage and organization. Detailed with contoured shoulder straps that make it comfortable to carry, this TSA-approved backpack includes a protective laptop compartment, accordion file holders for books, binders, and documents, and a convenient organizer to hold all sorts of small items and personal accessories.', '7490.00', 'assets/img/bags/backpack/swissgearbackred.png');
 
 -- --------------------------------------------------------
 
@@ -296,6 +297,36 @@ CREATE TABLE `item_categories` (
   `itemId` int(11) NOT NULL,
   `categoryId` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `item_categories`
+--
+
+INSERT INTO `item_categories` (`id`, `itemId`, `categoryId`) VALUES
+(1, 1, 1),
+(2, 1, 2),
+(3, 2, 1),
+(4, 3, 1),
+(5, 4, 1),
+(6, 4, 2),
+(7, 5, 1),
+(8, 5, 2),
+(9, 6, 1),
+(10, 6, 2),
+(11, 7, 1),
+(12, 7, 2),
+(13, 8, 1),
+(14, 8, 2),
+(15, 8, 5),
+(16, 9, 1),
+(17, 9, 2),
+(18, 10, 1),
+(19, 10, 2),
+(20, 10, 5),
+(21, 11, 1),
+(22, 11, 2),
+(23, 12, 1),
+(24, 12, 2);
 
 -- --------------------------------------------------------
 
@@ -460,12 +491,12 @@ ALTER TABLE `colors`
 -- AUTO_INCREMENT for table `items`
 --
 ALTER TABLE `items`
-  MODIFY `itemId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `itemId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 --
 -- AUTO_INCREMENT for table `item_categories`
 --
 ALTER TABLE `item_categories`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 --
 -- AUTO_INCREMENT for table `item_colors`
 --

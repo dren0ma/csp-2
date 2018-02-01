@@ -45,27 +45,9 @@ INSERT INTO items (name, brandId, description, price, img) VALUES
 "5185", "assets/img/bags/backpack/laurexbackred.png")
 
 
-
-
-SwissGear 29 Travel Gear
-BP 1 LAP 2
-1900 Scansmart TSA Laptop Backpack - 19" eBags Exclusive
-i assets/img/bags/backpack/ 7,490  
-assets/img/bags/backpack/ 3,744 
-
-Exclusive to eBags, this backpack offers a stylish look and makes air travel a little bit easier. The 
-
-SwissGear 29 Travel Gear 1900 Scansmart TSA Laptop Backpack - 19" eBags Exclusive is crafted from 
-
-durable ballistic polyester and features a well-constructed design with a checkpoint friendly laptop 
-
-compartment, an Airflow back system for easy carrying, and multiple pockets for storage and 
-
-organization. Detailed with contoured shoulder straps that make it comfortable to carry, this TSA-
-
-approved backpack includes a protective laptop compartment, accordion file holders for books, binders, 
-
-and documents, and a convenient organizer to hold all sorts of small items and personal accessories.
+("Scansmart TSA Backpack", 29,
+"This backpack offers a stylish look and makes air travel a little bit easier. The SwissGear Travel Gear Scansmart TSA Laptop Backpack is crafted from durable ballistic polyester and features a well-constructed design with a checkpoint friendly laptop compartment, an Airflow back system for easy carrying, and multiple pockets for storage and organization. Detailed with contoured shoulder straps that make it comfortable to carry, this TSA-approved backpack includes a protective laptop compartment, accordion file holders for books, binders, and documents, and a convenient organizer to hold all sorts of small items and personal accessories.",
+"7490", "assets/img/bags/backpack/swissgearbackred.png")
 
 
 
