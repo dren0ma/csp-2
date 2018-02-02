@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 01, 2018 at 09:02 AM
+-- Generation Time: Feb 02, 2018 at 08:34 AM
 -- Server version: 10.1.21-MariaDB
 -- PHP Version: 7.1.2
 
@@ -110,7 +110,10 @@ INSERT INTO `brands` (`brandId`, `brand`) VALUES
 (31, 'Travelon'),
 (32, 'Under Armour'),
 (33, 'Vagabond Traveler'),
-(34, 'Visconti');
+(34, 'Visconti'),
+(35, 'Osprey'),
+(36, 'Osprey'),
+(37, 'Osprey');
 
 -- --------------------------------------------------------
 
@@ -284,7 +287,11 @@ INSERT INTO `items` (`itemId`, `name`, `brandId`, `description`, `price`, `img`)
 (9, 'Agave Laptop Backpack', 16, 'Make the daily commute to school with your laptop, tablet, books, and small accessories organized neatly inside this backpack from JanSport. The JanSport Agave backpack is made from durable polyester dobby fabric and features a classic shape with multiple compartments for organization and AirCore shoulder straps that offer comfort for all day use. This backpack has two large main compartments and includes a padded sleeve for your laptop and iPad or 3 liter hydration system, a quick access loft pocket, dual side water bottle pockets, and a front organizer compartment loaded with pockets for your cell phone, pens, keys, mp3 player, and other small items. Other features of this pack include a fully padded back panel, a front access zipper pocket, and side compression straps.', '4033.00', 'assets/img/bags/backpack/jansportagavemutedgreen.png'),
 (10, 'Recruit Backpack', 32, 'Loaded with pockets to hold all of your gear, this backpack is perfect for everyday travel. The Under Armour Recruit Backpack is made from durable polyester fabric with an abrasion resistant bottom panel and features a large shape with interior and exterior storage pockets and padded HeatGear shoulder straps that make it comfortable to carry. This backpack includes a roomy main compartment, a soft lined laptop sleeve, two side water bottle pockets, and a front organizer compartment with a key clip and slip pockets to hold small accessories. A water repellent valuables pocket on the front panel provides safe and convenient storage for your cell phone, sunglasses, or other personal items.', '3744.00', 'assets/img/bags/backpack/underarmorbackblack.png'),
 (11, 'Laptop Backpack', 20, 'Carry all your work, school or play essentials in graphic style in the Laurex Laptop Backpack. This cool pack for women features a roomy interior with a padded 17\' laptop computer compartment, plus plenty of room for your books, binders, folders, and other large gear. A full organizational panel offers pen/lipstick loops, card slots, and an open pocket for quick access to your cell phone. Exterior zippered pockets provide extra storage or stow last-minute items, and a flat pocket for documents is hidden by the flap. The Laurex Laptop Backpack has a heavy duty zipper and a net in a pocket which serves as a water bottle holder. A handle on the top allows you to carry it without putting it on, and a padded back panel and shoulder straps make this the perfectly comfortable everyday pack for women.', '5185.00', 'assets/img/bags/backpack/laurexbackred.png'),
-(12, 'Scansmart TSA Backpack', 29, 'This backpack offers a stylish look and makes air travel a little bit easier. The SwissGear Travel Gear Scansmart TSA Laptop Backpack is crafted from durable ballistic polyester and features a well-constructed design with a checkpoint friendly laptop compartment, an Airflow back system for easy carrying, and multiple pockets for storage and organization. Detailed with contoured shoulder straps that make it comfortable to carry, this TSA-approved backpack includes a protective laptop compartment, accordion file holders for books, binders, and documents, and a convenient organizer to hold all sorts of small items and personal accessories.', '7490.00', 'assets/img/bags/backpack/swissgearbackred.png');
+(12, 'Scansmart TSA Backpack', 29, 'This backpack offers a stylish look and makes air travel a little bit easier. The SwissGear Travel Gear Scansmart TSA Laptop Backpack is crafted from durable ballistic polyester and features a well-constructed design with a checkpoint friendly laptop compartment, an Airflow back system for easy carrying, and multiple pockets for storage and organization. Detailed with contoured shoulder straps that make it comfortable to carry, this TSA-approved backpack includes a protective laptop compartment, accordion file holders for books, binders, and documents, and a convenient organizer to hold all sorts of small items and personal accessories.', '7490.00', 'assets/img/bags/backpack/swissgearbackred.png'),
+(13, 'Urban Messenger', 26, 'Keep your laptop computer stylishly well-protected while you\'re on-the-go in the Piel Four-Section Urban Laptop Messenger. This soft, smooth, supple, and luxurious naked leather messenger bag features flap-over construction and bright accents, and it\'s available in several colors. Its spacious, lined interior contains a fully-padded laptop computer compartment; a file pocket; and an organizational panel with pen loops, a full-length zippered pocket, a small zippered valuables pocket, and a flap pocket. The Piel Four-Section Urban Laptop Messenger comes with an adjustable shoulder strap for your carrying comfort.', '27077.00', 'assets/img/bags/messenger/pielmsgrblack.png'),
+(14, 'Graham Messenger', 10, 'A man on-the-go needs something in his back pocket (or over his shoulder) to carry him through the day. In our opinion, the Graham messenger fits the bill in lighter-weight fabric for spring and extra room for his laptop.', '8527.00', 'assets/img/bags/messenger/fossilmsgrgrey.png'),
+(15, 'Hiking Pack', 7, 'Embark on your next rugged adventure with all of your essentials packed inside this hiking backpack from Everest. The Everest Hiking Pack is made from durable polyester and features a large shape and a multi-compartment design with a snap buckle closure, a rugged bottom, and multiple pockets for organization. In addition to the top-loading main compartment, this pack includes zippered side pockets, a front bungee, and an attachment ring for accessories or gear pouches. Available in a variety of colors to suit your mood and style, this backpack is perfect for long hikes, camping trips, weekend getaways, and all sorts of outdoor excursions.', '3684.00', 'assets/img/bags/outdoor/everestoutdoorgreen.png'),
+(17, 'Talon Hiking Pack', 23, '						The Talon is lighter, nimbler and more comfortable than ever. With an updated AirScape backpanel to keep you dry, a continuous hipbelt wrap for incredible comfort and a suspension system that stabilized loads for dynamic activities, this is the ideal pack for minimalist backpacking, day hikes and more.																																					', '8066.00', 'assets/img/bags/outdoor/ospreyoutdoorultramarine.png');
 
 -- --------------------------------------------------------
 
@@ -326,7 +333,13 @@ INSERT INTO `item_categories` (`id`, `itemId`, `categoryId`) VALUES
 (21, 11, 1),
 (22, 11, 2),
 (23, 12, 1),
-(24, 12, 2);
+(24, 12, 2),
+(25, 13, 2),
+(26, 13, 3),
+(27, 14, 2),
+(28, 14, 3),
+(29, 15, 4),
+(31, 17, 4);
 
 -- --------------------------------------------------------
 
@@ -338,6 +351,28 @@ CREATE TABLE `item_colors` (
   `id` int(11) NOT NULL,
   `itemId` int(11) NOT NULL,
   `colorId` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `item_colors`
+--
+
+INSERT INTO `item_colors` (`id`, `itemId`, `colorId`) VALUES
+(1, 1, 13),
+(2, 2, 40),
+(3, 2, 42);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `orders`
+--
+
+CREATE TABLE `orders` (
+  `orderId` int(11) NOT NULL,
+  `userId` int(11) NOT NULL,
+  `itemId` int(11) NOT NULL,
+  `quantity` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -442,6 +477,14 @@ ALTER TABLE `item_colors`
   ADD KEY `itemId` (`itemId`);
 
 --
+-- Indexes for table `orders`
+--
+ALTER TABLE `orders`
+  ADD PRIMARY KEY (`orderId`),
+  ADD KEY `itemId` (`itemId`),
+  ADD KEY `orders_ibfk_2` (`userId`);
+
+--
 -- Indexes for table `promos`
 --
 ALTER TABLE `promos`
@@ -471,7 +514,7 @@ ALTER TABLE `accounttype`
 -- AUTO_INCREMENT for table `brands`
 --
 ALTER TABLE `brands`
-  MODIFY `brandId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
+  MODIFY `brandId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
 --
 -- AUTO_INCREMENT for table `cart`
 --
@@ -491,17 +534,22 @@ ALTER TABLE `colors`
 -- AUTO_INCREMENT for table `items`
 --
 ALTER TABLE `items`
-  MODIFY `itemId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `itemId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 --
 -- AUTO_INCREMENT for table `item_categories`
 --
 ALTER TABLE `item_categories`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
 --
 -- AUTO_INCREMENT for table `item_colors`
 --
 ALTER TABLE `item_colors`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+--
+-- AUTO_INCREMENT for table `orders`
+--
+ALTER TABLE `orders`
+  MODIFY `orderId` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `promos`
 --
@@ -549,6 +597,13 @@ ALTER TABLE `item_categories`
 ALTER TABLE `item_colors`
   ADD CONSTRAINT `item_colors_ibfk_1` FOREIGN KEY (`colorId`) REFERENCES `colors` (`colorId`) ON UPDATE CASCADE,
   ADD CONSTRAINT `item_colors_ibfk_2` FOREIGN KEY (`itemId`) REFERENCES `items` (`itemId`) ON UPDATE CASCADE;
+
+--
+-- Constraints for table `orders`
+--
+ALTER TABLE `orders`
+  ADD CONSTRAINT `orders_ibfk_1` FOREIGN KEY (`itemId`) REFERENCES `items` (`itemId`) ON UPDATE CASCADE,
+  ADD CONSTRAINT `orders_ibfk_2` FOREIGN KEY (`userId`) REFERENCES `accounts` (`userId`) ON UPDATE CASCADE;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

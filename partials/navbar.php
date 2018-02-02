@@ -84,7 +84,7 @@
 					<a href="contact.php" class="navbar-item">
 						Contact Us
 					</a>
-					<!-- show current user -->
+					<!-- show login -->
 					<?php
 					if (isset($_SESSION['username'])) {
 						echo "<a href='logout.php' class='navbar-item'>

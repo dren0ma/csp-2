@@ -88,6 +88,61 @@ $('#regConpassword').on('input', function(){
 	}
 })
 
+// //ajax post request shop delete item
+// $('.shop-item-delete').click(function(){
+// 	var id = $(this).data('id');
+
+// 	$.ajax ({
+// 		method: 'post',
+// 		url: 'deleteshopitem.php',
+// 		data: {
+// 			id: id
+// 		},
+// 		success: function(data){
+// 		}
+// 	})
+
+// });
+
+// $('.checkout').click(function(){
+// 	var qty = $('.itemqty').val();
+// 	var index = $(this).data('index');
+
+// 	$.ajax ({
+// 			method: 'post',
+// 			url: 'cart.php',
+// 			data: {
+// 				index: index,
+// 				qty: qty
+// 			},
+// 			success: function(data){
+// 				$("#modal-body").html(data);
+// 			}
+// 		})
+// });
+
+$('.btnLeft').click(function(){
+	var qtyCartId = $(this).data('id');
+	var price = $('#itemPrice'+qtyCartId).data('price');
+	var qty = parseInt($("#qtyCart"+qtyCartId).text());
+	if (qty > 0) {
+		qty--;
+		$("#qtyCart"+qtyCartId).html(qty);
+		$("#itemPrice"+qtyCartId).html(price*qty);
+	}
+	else {
+		$("#itemPrice"+qtyCartId).html(0);
+	}
+})
+
+$('.btnRight').click(function(){
+	var qtyCartId = $(this).data('id');
+	var price = $('#itemPrice'+qtyCartId).data('price');
+	var qty = parseInt($("#qtyCart"+qtyCartId).text());
+	qty++;
+	$("#qtyCart"+qtyCartId).html(qty); 
+	$("#itemPrice"+qtyCartId).html(price*qty);
+})
 
 
 
@@ -99,41 +154,9 @@ $('#regConpassword').on('input', function(){
 
 
 
-// jQuery(document).ready(function(){
-//     // This button will increment the value
-//     $('.qtyplus').click(function(e){
-//         // Stop acting like a button
-//         e.preventDefault();
-//         // Get the field name
-//         fieldName = $(this).attr('field');
-//         // Get its current value
-//         var currentVal = parseInt($('input[name='+fieldName+']').val());
-//         // If is not undefined
-//         if (!isNaN(currentVal)) {
-//             // Increment
-//             $('input[name='+fieldName+']').val(currentVal + 1);
-//         } else {
-//             // Otherwise put a 0 there
-//             $('input[name='+fieldName+']').val(0);
-//         }
-//     });
-//     // This button will decrement the value till 0
-//     $(".qtyminus").click(function(e) {
-//         // Stop acting like a button
-//         e.preventDefault();
-//         // Get the field name
-//         fieldName = $(this).attr('field');
-//         // Get its current value
-//         var currentVal = parseInt($('input[name='+fieldName+']').val());
-//         // If it isn't undefined or its greater than 0
-//         if (!isNaN(currentVal) && currentVal > 0) {
-//             // Decrement one
-//             $('input[name='+fieldName+']').val(currentVal - 1);
-//         } else {
-//             // Otherwise put a 0 there
-//             $('input[name='+fieldName+']').val(0);
-//         }
-//     });
+
+
+
 
 
 /* Open the sidenav */

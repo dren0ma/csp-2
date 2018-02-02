@@ -1,26 +1,38 @@
 <?php 
-require "dbconnect.php";
+
 function display_title(){
-	echo "Account Registration";
+	echo "My Profile";
 }
-function display_content() { ?>
+function display_content() { 
+require "dbconnect.php";
+
+$id = $_GET['id'];
+
+$sql = "SELECT * FROM users  
+		JOIN accounts ON users.userId = accounts.userId
+		WHERE accounts.userId = $id";
+
+$result = mysqli_query($dbcon, $sql);
+$dbarray = mysqli_fetch_assoc($result);
+extract($dbarray);
+	?>
 
 	
-<form class="container" action="reguser.php" method="POST">
+<form class="container" <?php echo "action='updateprofile.php?id=$id'" ?> method="POST">
 	<div class="columns is-multiline">
 		<div class="column is-5">
 			<p class="title">Personal Information</p>
 			<div class="field ">
 				<label class="label">Name:</label>
 				<div class="control has-icons-left">
-					<input class="input is-danger" type="name" placeholder="First Name" name="firstName" id="regFirstName"></input>
+					<input class="input" type="name" placeholder="First Name" name="firstName" value="<?php echo $dbarray['firstName'] ?>"></input>
 					<span class="icon is-left"><i class="fas fa-user"></i></span>
 				</div>
 				<p class="help">*min 4 characters</p>
 			</div>
 			<div class="field">
 				<div class="control has-icons-left">
-					<input class="input" type="name" placeholder="Last Name" name="lastName" id="regLastName"></input>
+					<input class="input" type="name" placeholder="Last Name" name="lastName" id="regLastName" value="<?php echo $dbarray['lastName'] ?>"></input>
 					<span class="icon is-left"><i class="fas fa-user"></i></span>
 				</div>
 			</div>
@@ -30,7 +42,7 @@ function display_content() { ?>
 			<div class="field">
 				<label class="label">Address:</label>
 				<div class="control has-icons-left">
-					<input class="input is-danger" type="text" placeholder="Address" name="address" id="regAddress"></input>
+					<input class="input" type="text" placeholder="Address" name="address" value="<?php echo $dbarray['address'] ?>"></input>
 					<span class="icon is-left"><i class="fas fa-home"></i></span>
 				</div>
 				<p class="help">*min 4 characters</p>
@@ -40,7 +52,7 @@ function display_content() { ?>
 					<div class="field">
 						<label class="label">Email:</label>
 						<div class="control has-icons-left is-expanded">
-							<input class="input is-danger" type="email" placeholder="Email" name="email" id="regEmail"></input>
+							<input class="input" type="email" placeholder="Email" name="email" value="<?php echo $dbarray['email'] ?>"></input>
 							<span class="icon is-left"><i class="fas fa-envelope"></i></span>
 						</div>
 					</div>
@@ -51,31 +63,15 @@ function display_content() { ?>
 		<div class="column is-5">
 			<p class="title">Account Information</p>
 			<div class="field">
-				<label class="label">Username:</label>
+				<label class="label">Change Password:</label>
 				<div class="control has-icons-left">
-					<input class="input is-danger" type="text" placeholder="Username" name="userName" id="regUserName"></input>
-					<span class="icon is-left"><i class="fas fa-lock"></i></span>
-				</div>
-				<p class="help">*min 4 characters</p>
-			</div>
-			<div class="field">
-				<label class="label">Password:</label>
-				<div class="control has-icons-left">
-					<input class="input is-danger" type="password" placeholder="Password" name="password" id="regPassword"></input>
+					<input class="input" type="password" placeholder="Password" name="password"></input>
 					<span class="icon is-left"><i class="fas fa-key"></i></span>
 				</div>
 				<p class="help">*min 4 characters</p>
 			</div>
 			<div class="field">
-				<label class="label">Confirm Password:</label>
-				<div class="control has-icons-left" id="conPassswordDiv">
-					<input class="input is-danger" type="password" placeholder="Password" name="conpassword" id="regConpassword"></input>
-					<span class="icon is-left"><i class="fas fa-key"></i></span>
-				</div>
-				
-			</div>
-			<div class="field">
-				<input class="button is-info" type="submit" id="regSubBtn"></input>
+				<input class="button is-dark" type="submit" id="regSubBtn"></input>
 			</div>
 		</div>	<!-- acct info -->
 		

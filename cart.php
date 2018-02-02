@@ -22,12 +22,12 @@ else {
 
 			if (isset($_SESSION['cart'])){ ?>
 			<div class="container">
-				<div class="section">
+				<div class="section cart-section">
 					<div class="columns is-vcentered">
 						<!-- item img -->
 						<div class="column is-one-fifth is-offset-1">
-							<a <?php echo "href='deletecartitem.php?id=$id'>" ?>
-							<figure class="image is-24x24 exit">
+							<?php echo "<a href='deletecartitem.php?id=$id'>" ?>
+							<figure class="image is-24x24 delete-item">
 								<img src="assets/img/icons/exit.png">
 							</figure>
 							</a>
@@ -79,34 +79,20 @@ else {
 			</div>	<!-- /container -->
 			
 			<?php }	// /if
-	}	// /foreach 
-}
+	} ?>	<!-- foreach  -->
+	<div class="section">
+		<nav class="level">
+			<div class="level-item">
+				<a href="" class="button is-dark checkout">
+					Checkout
+				</a>
+			</div>
+		</nav>
+	</div>
+
+
+<?php
+}	//function display
 require "partials/main.php";
 ?>
 
-<!-- qty -->
-<script type="text/javascript">
-$('.btnLeft').click(function(){
-	var qtyCartId = $(this).data('id');
-	var price = $('#itemPrice'+qtyCartId).data('price');
-	var qty = parseInt($("#qtyCart"+qtyCartId).text());
-	if (qty > 0) {
-		qty--;
-		$("#qtyCart"+qtyCartId).html(qty);
-		$("#itemPrice"+qtyCartId).html(price*qty);
-	}
-	else {
-		$("#itemPrice"+qtyCartId).html(0);
-	}
-})
-
-$('.btnRight').click(function(){
-	var qtyCartId = $(this).data('id');
-	var price = $('#itemPrice'+qtyCartId).data('price');
-	var qty = parseInt($("#qtyCart"+qtyCartId).text());
-	qty++;
-	$("#qtyCart"+qtyCartId).html(qty); 
-	$("#itemPrice"+qtyCartId).html(price*qty);
-})
-
-</script>

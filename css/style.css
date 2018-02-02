@@ -53,6 +53,9 @@
 	height: 100vh;
 }*/
 
+/*.cart-section {
+    min-height: 80vh;
+}*/
 #form-login-col {
 	height: 50vh;
 }
@@ -61,12 +64,6 @@
 	background-color: var(--secondary-color);
 }
 
-.logo {
-    position: absolute;
-    /*height: 500px;*/
-    top: 2rem;
-    left: 10rem;
-}
 .card {
     height: 100%;
 }
@@ -90,15 +87,25 @@ figure img {
 }
 
 
+
 .button-border-remove {
     border: none;
 }
 
-.exit {
+.delete-item, .shop-item-delete, .shop-item-edit {
     position: absolute;
     z-index: 5;
     opacity: 0.5;
+
 }
+.delete-item, .shop-item-delete  {
+    left: 0;
+}
+
+.shop-item-edit {
+    right: 0;
+}
+
 
 
 
@@ -151,3 +158,4 @@ figure img {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
 }
+
