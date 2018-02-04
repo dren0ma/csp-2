@@ -1,6 +1,6 @@
 <?php 
 function display_title(){
-	echo "Contact Us";
+	echo "Dashboard";
 }
 function display_content() { 
 require 'dbconnect.php';
