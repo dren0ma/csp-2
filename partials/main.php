@@ -1,8 +1,8 @@
 <?php session_start(); ?>
 	
 <!DOCTYPE html>
-<html>
-<!-- class="has-navbar-fixed-top" -->
+<html class="has-navbar-fixed-top">
+
 <head lang="en">
 	<title><?php display_title(); ?></title>
 
@@ -18,6 +18,9 @@
 
 	<!--   imports fontaweseome   -->
 	<script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
+
+	<!--   google fonts    -->
+	<link href="https://fonts.googleapis.com/css?family=Raleway:100,200" rel="stylesheet">
 
 </head>
 <body>

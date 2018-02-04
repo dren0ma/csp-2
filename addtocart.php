@@ -2,14 +2,15 @@
 session_start();
 
 $id = $_GET['itemId'];
-$qty = $_GET['qty'];
+$quantity = $_GET['qty'];
 
 if (isset($_SESSION['cart'][$id])){
-	$_SESSION['cart'][$id] += $qty;
+	$_SESSION['cart'][$id] += $quantity;
 }
 else {
-	$_SESSION['cart'][$id] = $qty;	
+	$_SESSION['cart'][$id] = $quantity;	
 }
+
 
 header('location: shop.php');
 

@@ -1,16 +1,25 @@
 assets/img/bags/backpack/
+16 DONE 
 
-BP, SP
-BP
-BP
-BP, LAP
-BP, LAP
-BP, LAP
-BP, LAP
-BP, LAP, SP
-BP, LAP
-BP, LAP, SP
-BP, LAP
+
+INSERT INTO item_categories (itemId, categoryId)  VALUES 
+(1, 1), (1, 2),
+(2, 1),
+(3, 1),
+(4, 1), (4, 2),
+(5, 1), (5, 2),
+(6, 1), (6, 2),
+(7, 1), (7, 2),
+(8, 1), (8, 2), (8, 5),
+(9, 1), (9, 2),
+(10, 1), (10, 2), (10, 5),
+(11, 1), (11, 2),
+(12, 1), (12, 2),
+(13, 2), (13, 3),
+(14, 2), (14, 3)
+(15, 4),
+(16, 4)
+
 
 
 

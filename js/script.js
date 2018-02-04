@@ -25,21 +25,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 });
 
-// login modal
-
-$('#showLogin').click(function() {
-	$('#loginModal').addClass('is-active');  
-});
-
-$('.login-modal-close').click(function() {
-	$('#loginModal').removeClass('is-active');
-});
-
-$('.modal-background').click(function(){
-	$('#loginModal').removeClass('is-active');
-
-});
-
 // register form
 
 $('#regFirstName').on('input', function(){
@@ -105,12 +90,60 @@ $('#regConpassword').on('input', function(){
 
 
 
-/* Open the sidenav */
-function openNav() {
-    document.getElementById("mySidenav").style.width = "100%";
-}
+$('.btnLeft').click(function(){
+	var qtyCartId = $(this).data('id');
+	var price = $('#itemPrice'+qtyCartId).data('price');
+	var qty = parseInt($("#qtyCart"+qtyCartId).text());
+	if (qty > 1) {
+		qty--;
+		$("#qtyCart"+qtyCartId).html(qty);
+		$("#itemPrice"+qtyCartId).html(price*qty);
 
-/* Close/hide the sidenav */
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-}
+		$.ajax ({
+				method: 'post',
+				url: 'changecartqty.php',
+				data: {
+					qtyCartId: qtyCartId,
+					qty: qty
+				},
+				success: function(data){
+				}
+			})
+	}
+	else {
+		$("#itemPrice"+qtyCartId).html(1);
+	}
+
+})
+
+$('.btnRight').click(function(){
+	var qtyCartId = $(this).data('id');
+	var price = $('#itemPrice'+qtyCartId).data('price');
+	var qty = parseInt($("#qtyCart"+qtyCartId).text());
+	qty++;
+
+	$("#qtyCart"+qtyCartId).html(qty); 
+	$("#itemPrice"+qtyCartId).html(price*qty);
+	$.ajax ({
+				method: 'post',
+				url: 'changecartqty.php',
+				data: {
+					qtyCartId: qtyCartId,
+					qty: qty
+				},
+				success: function(data){
+				}
+			})
+})
+
+$('.order-dash-trigger').click(function(){
+	$('#dash-users').addClass('hide-users');
+	$("#dash-orders").removeClass("hide-orders");
+
+})
+
+$('.user-dash-trigger').click(function(){
+	$('#dash-orders').addClass('hide-orders');
+	$("#dash-users").removeClass("hide-users");
+
+})

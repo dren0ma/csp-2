@@ -1,7 +1,7 @@
 <?php 
 require "dbconnect.php";
 function display_title(){
-	echo "Account Registration";
+	echo "Account Login";
 }
 function display_content() { ?>
 
@@ -24,10 +24,10 @@ function display_content() { ?>
 				</div>
 				<div class="field is-grouped">
 					<p class="control">
-						<input class="button is-primary" type="submit" value="Login"></button>
+						<input class="button is-info" type="submit" value="Login"></button>
 					</p>
 					<p class="control">
-						<a href="register.php"><input type="button" class="button is-warning" value="Register"></button></a>
+						<a href="register.php"><input type="button" class="button is-dark" value="Register"></button></a>
 					</p>
 				</div>
 			</form>

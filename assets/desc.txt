@@ -42,30 +42,32 @@ INSERT INTO items (name, brandId, description, price, img) VALUES
 
 ("Laptop Backpack", 20,
 "Carry all your work, school or play essentials in graphic style in the Laurex Laptop Backpack. This cool pack for women features a roomy interior with a padded 17' laptop computer compartment, plus plenty of room for your books, binders, folders, and other large gear. A full organizational panel offers pen/lipstick loops, card slots, and an open pocket for quick access to your cell phone. Exterior zippered pockets provide extra storage or stow last-minute items, and a flat pocket for documents is hidden by the flap. The Laurex Laptop Backpack has a heavy duty zipper and a net in a pocket which serves as a water bottle holder. A handle on the top allows you to carry it without putting it on, and a padded back panel and shoulder straps make this the perfectly comfortable everyday pack for women.",
-"5185", "assets/img/bags/backpack/laurexbackred.png")
+"5185", "assets/img/bags/backpack/laurexbackred.png"),
+
+
+("Scansmart TSA Backpack", 29,
+"This backpack offers a stylish look and makes air travel a little bit easier. The SwissGear Travel Gear Scansmart TSA Laptop Backpack is crafted from durable ballistic polyester and features a well-constructed design with a checkpoint friendly laptop compartment, an Airflow back system for easy carrying, and multiple pockets for storage and organization. Detailed with contoured shoulder straps that make it comfortable to carry, this TSA-approved backpack includes a protective laptop compartment, accordion file holders for books, binders, and documents, and a convenient organizer to hold all sorts of small items and personal accessories.",
+"7490", "assets/img/bags/backpack/swissgearbackred.png"),
+
+
+("Urban Messenger", 26,
+"Keep your laptop computer stylishly well-protected while you're on-the-go in the Piel Four-Section Urban Laptop Messenger. This soft, smooth, supple, and luxurious naked leather messenger bag features flap-over construction and bright accents, and it's available in several colors. Its spacious, lined interior contains a fully-padded laptop computer compartment; a file pocket; and an organizational panel with pen loops, a full-length zippered pocket, a small zippered valuables pocket, and a flap pocket. The Piel Four-Section Urban Laptop Messenger comes with an adjustable shoulder strap for your carrying comfort.",
+"27077", "assets/img/bags/messenger/pielmsgrblack.png"),
+
+("Graham Messenger", 10,
+"A man on-the-go needs something in his back pocket (or over his shoulder) to carry him through the day. In our opinion, the Graham messenger fits the bill in lighter-weight fabric for spring and extra room for his laptop.",
+"8527", "assets/img/bags/messenger/fossilmsgrgrey.png"),
+
+("Hiking Pack", 7,
+"Embark on your next rugged adventure with all of your essentials packed inside this hiking backpack from Everest. The Everest Hiking Pack is made from durable polyester and features a large shape and a multi-compartment design with a snap buckle closure, a rugged bottom, and multiple pockets for organization. In addition to the top-loading main compartment, this pack includes zippered side pockets, a front bungee, and an attachment ring for accessories or gear pouches. Available in a variety of colors to suit your mood and style, this backpack is perfect for long hikes, camping trips, weekend getaways, and all sorts of outdoor excursions.",
+"3684", "assets/img/bags/outdoor/everestoutdoorgreen.png"),
+
+("Talon Hiking Pack", 23,
+"The Talon is lighter, nimbler and more comfortable than ever. With an updated AirScape backpanel to keep you dry, a continuous hipbelt wrap for incredible comfort and a suspension system that stabilized loads for dynamic activities, this is the ideal pack for minimalist backpacking, day hikes and more.",
+"8066", "assets/img/bags/outdoor/ospreyoutdoorultramarine.png"),
 
 
 
-
-SwissGear 29 Travel Gear
-BP 1 LAP 2
-1900 Scansmart TSA Laptop Backpack - 19" eBags Exclusive
-i assets/img/bags/backpack/ 7,490  
-assets/img/bags/backpack/ 3,744 
-
-Exclusive to eBags, this backpack offers a stylish look and makes air travel a little bit easier. The 
-
-SwissGear 29 Travel Gear 1900 Scansmart TSA Laptop Backpack - 19" eBags Exclusive is crafted from 
-
-durable ballistic polyester and features a well-constructed design with a checkpoint friendly laptop 
-
-compartment, an Airflow back system for easy carrying, and multiple pockets for storage and 
-
-organization. Detailed with contoured shoulder straps that make it comfortable to carry, this TSA-
-
-approved backpack includes a protective laptop compartment, accordion file holders for books, binders, 
-
-and documents, and a convenient organizer to hold all sorts of small items and personal accessories.
 
 
 
@@ -335,16 +337,7 @@ to hold small items and school supplies, and a slip in side pocket to hold an um
 
 bottle.
 
-Fossil 10 10 10
-Graham Messenger 3
-assets/img/bags/backpack/ 8,527  
-assets/img/bags/backpack/ 6,798
 
-A man on-the-go needs something in his back pocket (or over his shoulder) to carry him through the day. 
-
-In our opinion, the Graham messenger fits the bill-in lighter-weight fabric for spring and extra room 
-
-for his laptop.
 
 
 Bellino 3 3
@@ -429,26 +422,6 @@ accessories. A front flap pocket and a front zipper pocket provide added storage
 
 personal essentials.
 
-
-Piel 26 Four-Section Urban Laptop Messenger 3
-i
-assets/img/bags/backpack/ 27,077
-assets/img/bags/backpack/ 16,938 
-
-
-Keep your laptop computer stylishly well-protected while you're on-the-go in the Piel 26 Four-Section 
-
-Urban Laptop Messenger. This soft, smooth, supple, and luxurious naked leather messenger bag features 
-
-flap-over construction and bright accents, and it's available in several colors. Its spacious, lined 
-
-interior contains a fully-padded laptop computer compartment; a file pocket; and an organizational 
-
-panel with pen loops, a full-length zippered pocket, a small zippered valuables pocket, and a flap 
-
-pocket. The Piel 26 Four-Section Urban Laptop Messenger comes with an adjustable shoulder strap for 
-
-your carrying comfort.
 
 
 Travelon 31 Anti-Theft Urban N/S Messenger Bag 3
@@ -694,28 +667,6 @@ and your trip the way you want. The MOLLE webbing surrounding the bag helps you 
 
 
 
-Everest 7 Hiking Pack 4
-i
-assets/img/bags/backpack/ 3,684
-assets/img/bags/backpack/ 1,382 
-
-Embark on your next rugged adventure with all of your essentials packed inside this hiking backpack 
-
-from Everest 7. The Everest 7 Hiking Pack is made from durable polyester and features a large shape and 
-
-a multi-compartment design with a snap buckle closure, a rugged bottom, and multiple pockets for 
-
-organization. In addition to the top-loading main compartment, this pack includes zippered side 
-
-pockets, a front bungee, and an attachment ring for accessories or gear pouches. Available in a variety 
-
-of colors to suit your mood and style, this backpack is perfect for long hikes, camping trips, weekend 
-
-getaways, and all sorts of outdoor excursions.
-
-
-
-
 Kelty 17 Redwing Reserve Hiking Backpack 4
 assets/img/bags/backpack/ 9,215 
 
@@ -745,15 +696,6 @@ exterior zipper pockets. Other features of this backpack include compression str
 
 organizer system for added storage.
 
-
-Osprey 23 Talon 33 Hiking Pack 4
-assets/img/bags/backpack/ 8,066 
-
-The Talon 33 is lighter, nimbler and more comfortable than ever. With an updated AirScape backpanel to 
-
-keep you dry, a continuous hipbelt wrap for incredible comfort and a suspension system that stabilized 
-
-loads for dynamic activities, this is the ideal pack for minimalist backpacking, day hikes and more.
 
 
 Red Rock 27 Outdoor Gear Deluxe Rifle Backpack 4

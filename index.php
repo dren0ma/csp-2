@@ -1,7 +1,7 @@
 <?php 
 
 function display_title(){
-	echo "Home";
+	echo "BagPack Home";
 }
 function display_content() { 
 
@@ -12,35 +12,68 @@ else {
 	$username = 'Guest';
 }
 ?>
+<div class="indeximg">
+	<div class="section">
+		<div class="container">
+	<figure class="image is-16by9">
+		<img src="assets/img/front2.jpeg">
+	</figure>
+	</div>
+	</div>
 
-<div id="mySidenav" class="sidenav">
-	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-	<div class="tile is-ancestor">
-		<div class="tile is-parent is-8 is-vertical">
-			<div class="box is-child">
-				asdasdasdasdasdasdasdasdasdasd
-			</div>
-			<div class="box is-child">
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-			</div>
-		</div>
-		
+<div class="section">
+	<div class="level">
+		<p class="level-item title is-2">Browse our Collection</p>
 	</div>
 </div>
 
-<!-- Use any element to open the sidenav -->
-<span onclick="openNav()">open</span>
-
-<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
-<div id="main">
-  ...
+<div class="section indeximg">
+	<div class="columns">
+		<div class="column">
+			<?php echo "<a href='sort.php?sort=bp'>"?>
+				<p class="title is-4 has-text-centered">Backpack</p>
+				<figure class="image is-square">
+					<img src="assets/img/bags/backpack/jansportbackred.png">
+				</figure>	
+			</a>
+		</div>
+		<div class="column">
+			<?php echo "<a href='sort.php?sort=lap'>"?>
+				<p class="title is-4 has-text-centered">Laptop</p>
+				<figure class="image is-square">
+					<img src="assets/img/bags/backpack/caselogicbackblack.png">
+				</figure>	
+			</a>
+		</div>
+		<div class="column">
+			<?php echo "<a href='sort.php?sort=msgr'>"?>
+				<p class="title is-4 has-text-centered">Messenger</p>
+				<figure class="image is-square">
+					<img src="assets/img/bags/messenger/bellinormsgrblue.png">
+				</figure>	
+			</a>
+		</div>
+		<div class="column">
+			<?php echo "<a href='sort.php?sort=sports'>"?>
+				<p class="title is-4 has-text-centered">Sports</p>
+				<figure class="image is-square">
+					<img src="assets/img/bags/sports/underarmorsportssteel.png">
+				</figure>	
+			</a>
+		</div>
+		<div class="column">
+			<?php echo "<a href='sort.php?sort=out'>"?>
+				<p class="title is-4 has-text-centered">Outdoor</p>
+				<figure class="image is-square">
+					<img src="assets/img/bags/outdoor/outdoorskylineblue.png">
+				</figure>	
+			</a>
+		</div>
+	</div>
+		
+		
 </div>
-
+</div>
 
 
 

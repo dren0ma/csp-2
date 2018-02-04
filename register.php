@@ -5,7 +5,7 @@ function display_title(){
 }
 function display_content() { ?>
 
-	
+<div class="section">
 <form class="container" action="reguser.php" method="POST">
 	<div class="columns is-multiline">
 		<div class="column is-5">
@@ -74,14 +74,15 @@ function display_content() { ?>
 				</div>
 				
 			</div>
+			<div class="field">
+				<input class="button is-info" type="submit" id="regSubBtn"></input>
+			</div>
 		</div>	<!-- acct info -->
 		
-		<div class="field">
-			<input class="button is-info" type="submit" id="regSubBtn"></input>
-		</div>
 	</div>
 	</div>
 </form>
+</div>
 
 <?php 	
 }
