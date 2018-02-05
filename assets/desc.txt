@@ -66,6 +66,46 @@ INSERT INTO items (name, brandId, description, price, img) VALUES
 "The Talon is lighter, nimbler and more comfortable than ever. With an updated AirScape backpanel to keep you dry, a continuous hipbelt wrap for incredible comfort and a suspension system that stabilized loads for dynamic activities, this is the ideal pack for minimalist backpacking, day hikes and more.",
 "8066", "assets/img/bags/outdoor/ospreyoutdoorultramarine.png"),
 
+("Urban Messenger", 3,
+"Add a stylish touch to your daily commute with this two-tone colorblocked messenger bag from Bellino. Made from durable poly/canvas fabric, the Bellino Urban Messenger bag features an urban-inspired design with a flap front silhouette, two secure buckle closures, and multiple pockets for storage and organization. Detailed with a roomy main compartment, this messenger bag includes a padded laptop sleeve, a zipper pocket to hold accessories, a side mesh water bottle pocket, and a vertical zipper pocket to hold your iPad or tablet. Beneath the flap, an organizer panel with a pen sleeve, card slots, and slip pockets offers convenient storage for all of your frequently used accessories.",
+"2470", "assets/img/bags/messenger/bellinormsgrblue.png"),
+
+("Anti-Theft Messenger", 31, 
+"Keep your most important items safe when you're on the go with this anti-theft messenger bag from Travelon. The Travelon Anti-Theft Urban N/S Messenger Bag is made from durable nylon fabric and features slash-proof construction with an adjustable cut-proof shoulder strap and a locking main compartment. This messenger bag has a flap front design with multiple interior compartments that include a pocket for your iPad or tablet, an RFID card slot to protect against identity thieves, and a pocket for your cell phone. A pen loop and a zipper pocket underneath the flap offer added storage for small items while an expansion pocket provides storage for a water bottle.",
+"4320", "assets/img/bags/messenger/travelonmsgrslate.png"),
+
+("Commute Laptop Messenger", 30,
+"The best classic laptop messenger bag for hauling your laptop, iPad, lunch and layers to class, the office or that meeting two timezones away.",
+"6856", "assets/img/bags/messenger/timbuk2msgrnautical.png"), 
+
+("Undeniable Medium Duffle 3.0", 32,
+"Stow your athletic gear or fitness essentials stylishly in the Under Armour Undeniable Medium Duffle 3.0. This lightweight and durable dobby polyester gym bag is available in several colors and features Under Armour logo screen-printing. It boasts a spacious, zippered main compartment with a zippered pocket for keeping valuables safe and secure plus plenty of room for your workout wear, uniform, sporting equipment, change of clothing, toiletries, and anything else you need for your exercise routine, for practice, or for the big game. An end compartment contains a ventilated wet/dry shoe compartment, and the Under Armour Undeniable Medium Duffle 3.0 has wrapped webbing haul handles and a padded, non-slip adjustable shoulder strap for carrying comfort and versatility.",
+"2592", "assets/img/bags/sports/underarmorsportssteel.png"),
+
+("Barricade IV Racquet Bag", 1,
+"Hit the tennis courts with your personal accessories and up to six racquets stashed inside this sporty duffel bag from Adidas. The Adidas Barricade IV Tour 6 Racquet Bag is made from dobby polyester fabric and features a large shape with a freshPak ventilated pocket to hold wet or dirty items, a thermal lined temperature controlled pocket to prevent your tennis racquet strings from warping in the heat, and a tricot-lined media pocket to hold your cell phone. Detailed with multiple logos and an Adidas kite tag, this duffel features padded haul handles, an EVA foam shoulder strap with Climacool technology, and padded backpack straps that offer versatile carrying options.",
+"5185", "assets/img/bags/sports/adidasracquetpink.png"),
+
+("Golf Bags 4.5 Cart Bag", 13,
+"9.5 inch 14-way graphite friendly separator top with putter pit and handles, full length club/shaft dividers, 8 zippered pockets including a velour lined valuables pocket & bottle compartment, padded rear position single carry strap with elastic band to secure strap, pen sleeve, towel ring with Velcro glove attachment, umbrella and tee holder, scorecard sleeve & rain hood cover, lightweight dobby nylon.",
+"7777", "assets/img/bags/sports/hotzsportsred.png"),
+
+("Skyline Internal Frame Pack", 24,
+"Stay refreshed and comfortably well-organized during your outdoor adventure carrying your necessities in the Outdoor Products Skyline Internal Frame Pack. This lightweight and durable ripstop polyester hydration-compatible backpack (equipment sold separately) features compact, contoured, two-tone styling with bright, embroidered and screen-printed Outdoor Products logo detailing. It boasts a spacious, structured and lined main compartment with a convenient u-shaped, zippered opening and an internal frame pack with a removable aluminum stay; and its vertical-zip front pocket offers additional storage space. Its stretchy mesh side pockets provide quick access to frequently-needed things, and it comes with padded, adjustable shoulder straps and an adjustable waist strap.",
+"4263", "assets/img/bags/outdoor/outdoorskylineblue.png"),
+
+("Outdoor Gear Engagement Pack", 27,
+"With a rugged design and multiple pockets for storage, this backpack is perfect for all sorts of outdoor adventures and expeditions. The Red Rock Outdoor Gear Engagement Pack is made from polyester fabric and features a large shape and a multi-compartment design with a padded back panel, a composite internal frame, a removable padded waist strap, and adjustable contoured shoulder straps that make it comfortable to carry. This hydration compatible backpack includes a top port hole for your bladder tube, a removable molle butt pouch, molle webbing for adding attachments, and a front zipper pocket that offers quick access to frequently used items.",
+"3744", "assets/img/bags/outdoor/redrockgearcamo.png"),
+
+("Vantage Tactical Backpack", 12,
+"The Vantage Tactical Backpack gives you the strategic advantage you have been looking for. This pack is tight and compact and holds your gear close. With an all-around adjustable compression system, sternum, and waist straps, you'll have the ability to perform those high velocity vertical and lateral movements with ease. Two main compartment and two accessory pockets give you versatility to customize your gear and your trip the way you want. The MOLLE webbing surrounding the bag helps you expand as needed.",
+"4608", "assets/img/bags/outdoor/highlandoutdoorblack.png"),
+
+
+
+
+
 
 
 
@@ -337,27 +377,8 @@ to hold small items and school supplies, and a slip in side pocket to hold an um
 
 bottle.
 
+----
 
-
-
-Bellino 3 3
-Urban Messenger 3
-assets/img/bags/backpack/ 2,470  
-assets/img/bags/backpack/ 1,437 
-
-Add a stylish touch to your daily commute with this two-tone colorblocked messenger bag from Bellino 3. 
-
-Made from durable poly/canvas fabric, the Bellino 3 Urban Messenger bag features an urban-inspired 
-
-design with a flap front silhouette, two secure buckle closures, and multiple pockets for storage and 
-
-organization. Detailed with a roomy main compartment, this messenger bag includes a padded laptop 
-
-sleeve, a zipper pocket to hold accessories, a side mesh water bottle pocket, and a vertical zipper 
-
-pocket to hold your iPad or tablet. Beneath the flap, an organizer panel with a pen sleeve, card slots, 
-
-and slip pockets offers convenient storage for all of your frequently used accessories.
 
 
 
@@ -423,32 +444,6 @@ accessories. A front flap pocket and a front zipper pocket provide added storage
 personal essentials.
 
 
-
-Travelon 31 Anti-Theft Urban N/S Messenger Bag 3
-i
-assets/img/bags/backpack/ 4,320
-
-Keep your most important items safe when you're on the go with this anti-theft messenger bag from 
-
-Travelon 31. The Travelon 31 Anti-Theft Urban N/S Messenger Bag is made from durable nylon fabric and 
-
-features slash-proof construction with an adjustable cut-proof shoulder strap and a locking main 
-
-compartment. This messenger bag has a flap front design with multiple interior compartments that 
-
-include a pocket for your iPad or tablet, an RFID card slot to protect against identity thieves, and a 
-
-pocket for your cell phone. A pen loop and a zipper pocket underneath the flap offer added storage for 
-
-small items while an expansion pocket provides storage for a water bottle.
-
-
-Timbuk2 30 Commute Laptop Messenger 3
-assets/img/bags/backpack/ 6,856 
-
-The best classic laptop messenger bag for hauling your laptop, iPad, lunch and layers to class, the 
-
-office or that meeting two timezones away.
 
 
 Visconti 34 Leather Distressed Messenger Bag Harvard Collection 3
@@ -534,10 +529,6 @@ ventilation pockets helps to keep your bag from smelling of foul odors. Includes
 shoulder strap. 11" x 19" x 12"
 
 
-Under Armour 32 Undeniable Medium Duffle 3.0                     5
-i
-assets/img/bags/backpack/ 2,592
-assets/img/bags/backpack/ 2,246 
 
 
 
@@ -560,19 +551,6 @@ storage for dirty items, while two front zipper pockets provide easy access to s
 
 cell phone and keys.
 
-
-Hot-Z 13 Golf Bags 4.5 Cart Bag 5
-i
-assets/img/bags/backpack/ 7,777
-assets/img/bags/backpack/ 5,761 
-
-9.5 inch 14-way graphite friendly separator top with putter pit and handles, full length club/shaft 
-
-dividers, 8 zippered pockets including a velour lined valuables pocket & bottle compartment, padded 
-
-rear position single carry strap with elastic band to secure strap, pen sleeve, towel ring with Velcro 
-
-glove attachment, umbrella and tee holder, scorecard sleeve & rain hood cover, lightweight dobby nylon.
 
 
 Olympia 22 USA 30" Sports Duffel 5
@@ -611,23 +589,6 @@ other media devices. With a key fob and a front zipper pocket for added storage,
 specifically designed with the female athlete in mind.
 
 
-Adidas 1 Barricade IV Tour 6 Racquet Bag 5
-assets/img/bags/backpack/ 5,185 
-
-
-Hit the tennis courts with your personal accessories and up to six racquets stashed inside this sporty 
-
-duffel bag from Adidas 1. The Adidas 1 Barricade IV Tour 6 Racquet Bag is made from dobby polyester 
-
-fabric and features a large shape with a freshPak ventilated pocket to hold wet or dirty items, a 
-
-thermal lined temperature controlled pocket to prevent your tennis racquet strings from warping in the 
-
-heat, and a tricot-lined media pocket to hold your cell phone. Detailed with multiple logos and an 
-
-Adidas 1 kite tag, this duffel features padded haul handles, an EVA foam shoulder strap with Climacool 
-
-technology, and padded backpack straps that offer versatile carrying options.
 
 KR Strikeforce 19Bowling LR3 Triple Roller Bag 5
 assets/img/bags/backpack/ 10,367 
@@ -648,22 +609,6 @@ main compartment, a top pocket to hold clothing, a shoe compartment that can hol
 
 
 ************************************************ OUTDOOR
-
-
-Highland Tactical 12 Vantage Tactical Backpack with All-Around Compression Straps 4
-i
-assets/img/bags/backpack/ 4,608
-assets/img/bags/backpack/ 2,880 
-
-The Vantage Tactical Backpack gives you the strategic advantage you have been looking for. This pack is 
-
-tight and compact and holds your gear close. With an all-around adjustable compression system, sternum, 
-
-and waist straps, you'll have the ability to perform those high velocity vertical and lateral movements 
-
-with ease. Two main compartment and two accessory pockets give you versatility to customize your gear 
-
-and your trip the way you want. The MOLLE webbing surrounding the bag helps you expand as needed.
 
 
 
@@ -718,24 +663,10 @@ a front molle webbing platform that makes it easy to attach pouches and addition
 
 
 
-Red Rock 27 Outdoor Gear Engagement Pack 4
-i
-assets/img/bags/backpack/ 3,744
-assets/img/bags/backpack/ 2,878 
 
-With a rugged design and multiple pockets for storage, this backpack is perfect for all sorts of 
 
-outdoor adventures and expeditions. The Red Rock 27 Outdoor Gear Engagement Pack is made from polyester 
 
-fabric and features a large shape and a multi-compartment design with a padded back panel, a composite 
 
-internal frame, a removable padded waist strap, and adjustable contoured shoulder straps that make it 
-
-comfortable to carry. This hydration compatible backpack includes a top port hole for your bladder 
-
-tube, a removable molle butt pouch, molle webbing for adding attachments, and a front zipper pocket 
-
-that offers quick access to frequently used items.
 
 
 Everest 7 Outdoor Waist Pack with Bottle Holders 4
@@ -746,24 +677,6 @@ assets/img/bags/backpack/ 1,843
 Outdoor Waist Pack with Bottle Holders
 
 
-Outdoor Products 24 Skyline Internal Frame Pack 4
-assets/img/bags/backpack/ 4,263 
 
-
-Stay refreshed and comfortably well-organized during your outdoor adventure carrying your necessities 
-
-in the Outdoor Products 24 Skyline Internal Frame Pack. This lightweight and durable ripstop polyester 
-
-hydration-compatible backpack (equipment sold separately) features compact, contoured, two-tone styling 
-
-with bright, embroidered and screen-printed Outdoor Products 24 logo detailing. It boasts a spacious, 
-
-structured and lined main compartment with a convenient u-shaped, zippered opening and an internal 
-
-frame pack with a removable aluminum stay; and its vertical-zip front pocket offers additional storage 
-
-space. Its stretchy mesh side pockets provide quick access to frequently-needed things, and it comes 
-
-with padded, adjustable shoulder straps and an adjustable waist strap.
 
 ************************************************
