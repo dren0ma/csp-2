@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 03, 2018 at 05:08 PM
+-- Generation Time: Feb 11, 2018 at 06:00 PM
 -- Server version: 10.1.30-MariaDB
 -- PHP Version: 7.1.13
 
@@ -34,7 +34,7 @@ CREATE TABLE `accounts` (
   `password` varchar(255) NOT NULL,
   `acctType` int(11) NOT NULL,
   `userId` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `accounts`
@@ -42,7 +42,9 @@ CREATE TABLE `accounts` (
 
 INSERT INTO `accounts` (`acctId`, `username`, `password`, `acctType`, `userId`) VALUES
 (1, 'admin', '7110eda4d09e062aa5e4a390b0a572ac0d2c0220', 1, 1),
-(2, 'tuitt', '7110eda4d09e062aa5e4a390b0a572ac0d2c0220', 2, 2);
+(2, 'tuitt', '7110eda4d09e062aa5e4a390b0a572ac0d2c0220', 2, 2),
+(3, 'Patrick', '7110eda4d09e062aa5e4a390b0a572ac0d2c0220', 1, 3),
+(6, 'test2', '7110eda4d09e062aa5e4a390b0a572ac0d2c0220', 2, 6);
 
 -- --------------------------------------------------------
 
@@ -53,7 +55,7 @@ INSERT INTO `accounts` (`acctId`, `username`, `password`, `acctType`, `userId`) 
 CREATE TABLE `accounttype` (
   `id` int(11) NOT NULL,
   `type` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `accounttype`
@@ -72,7 +74,7 @@ INSERT INTO `accounttype` (`id`, `type`) VALUES
 CREATE TABLE `brands` (
   `brandId` int(11) NOT NULL,
   `brand` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `brands`
@@ -115,7 +117,8 @@ INSERT INTO `brands` (`brandId`, `brand`) VALUES
 (34, 'Visconti'),
 (35, 'Osprey'),
 (36, 'Osprey'),
-(37, 'Osprey');
+(37, 'Osprey'),
+(38, '');
 
 -- --------------------------------------------------------
 
@@ -128,7 +131,7 @@ CREATE TABLE `cart` (
   `acctId` int(11) NOT NULL,
   `itemId` int(11) NOT NULL,
   `quantity` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -139,7 +142,7 @@ CREATE TABLE `cart` (
 CREATE TABLE `categories` (
   `id` int(11) NOT NULL,
   `type` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `categories`
@@ -161,7 +164,7 @@ INSERT INTO `categories` (`id`, `type`) VALUES
 CREATE TABLE `colors` (
   `colorId` int(11) NOT NULL,
   `name` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `colors`
@@ -261,6 +264,17 @@ INSERT INTO `colors` (`colorId`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `favorites`
+--
+
+CREATE TABLE `favorites` (
+  `id` int(11) NOT NULL,
+  `itemId` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `items`
 --
 
@@ -271,7 +285,7 @@ CREATE TABLE `items` (
   `description` text NOT NULL,
   `price` decimal(30,2) NOT NULL,
   `img` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `items`
@@ -293,7 +307,16 @@ INSERT INTO `items` (`itemId`, `name`, `brandId`, `description`, `price`, `img`)
 (13, 'Urban Messenger', 26, 'Keep your laptop computer stylishly well-protected while you\'re on-the-go in the Piel Four-Section Urban Laptop Messenger. This soft, smooth, supple, and luxurious naked leather messenger bag features flap-over construction and bright accents, and it\'s available in several colors. Its spacious, lined interior contains a fully-padded laptop computer compartment; a file pocket; and an organizational panel with pen loops, a full-length zippered pocket, a small zippered valuables pocket, and a flap pocket. The Piel Four-Section Urban Laptop Messenger comes with an adjustable shoulder strap for your carrying comfort.', '27077.00', 'assets/img/bags/messenger/pielmsgrblack.png'),
 (14, 'Graham Messenger', 10, 'A man on-the-go needs something in his back pocket (or over his shoulder) to carry him through the day. In our opinion, the Graham messenger fits the bill in lighter-weight fabric for spring and extra room for his laptop.', '8527.00', 'assets/img/bags/messenger/fossilmsgrgrey.png'),
 (15, 'Hiking Pack', 7, 'Embark on your next rugged adventure with all of your essentials packed inside this hiking backpack from Everest. The Everest Hiking Pack is made from durable polyester and features a large shape and a multi-compartment design with a snap buckle closure, a rugged bottom, and multiple pockets for organization. In addition to the top-loading main compartment, this pack includes zippered side pockets, a front bungee, and an attachment ring for accessories or gear pouches. Available in a variety of colors to suit your mood and style, this backpack is perfect for long hikes, camping trips, weekend getaways, and all sorts of outdoor excursions.', '3684.00', 'assets/img/bags/outdoor/everestoutdoorgreen.png'),
-(17, 'Talon Hiking Pack', 23, '						The Talon is lighter, nimbler and more comfortable than ever. With an updated AirScape backpanel to keep you dry, a continuous hipbelt wrap for incredible comfort and a suspension system that stabilized loads for dynamic activities, this is the ideal pack for minimalist backpacking, day hikes and more.																																					', '8066.00', 'assets/img/bags/outdoor/ospreyoutdoorultramarine.png');
+(17, 'Talon Hiking Pack', 23, 'The Talon is lighter, nimbler and more comfortable than ever. With an updated AirScape backpanel to keep you dry, a continuous hipbelt wrap for incredible comfort and a suspension system that stabilized loads for dynamic activities, this is the ideal pack for minimalist backpacking, day hikes and more.																																					', '8066.00', 'assets/img/bags/outdoor/ospreyoutdoorultramarine.png'),
+(18, 'Urban Messenger', 3, 'Add a stylish touch to your daily commute with this two-tone colorblocked messenger bag from Bellino. Made from durable poly/canvas fabric, the Bellino Urban Messenger bag features an urban-inspired design with a flap front silhouette, two secure buckle closures, and multiple pockets for storage and organization. Detailed with a roomy main compartment, this messenger bag includes a padded laptop sleeve, a zipper pocket to hold accessories, a side mesh water bottle pocket, and a vertical zipper pocket to hold your iPad or tablet. Beneath the flap, an organizer panel with a pen sleeve, card slots, and slip pockets offers convenient storage for all of your frequently used accessories.', '2470.00', 'assets/img/bags/messenger/bellinormsgrblue.png'),
+(19, 'Anti-Theft Messenger', 31, 'Keep your most important items safe when you\'re on the go with this anti-theft messenger bag from Travelon. The Travelon Anti-Theft Urban N/S Messenger Bag is made from durable nylon fabric and features slash-proof construction with an adjustable cut-proof shoulder strap and a locking main compartment. This messenger bag has a flap front design with multiple interior compartments that include a pocket for your iPad or tablet, an RFID card slot to protect against identity thieves, and a pocket for your cell phone. A pen loop and a zipper pocket underneath the flap offer added storage for small items while an expansion pocket provides storage for a water bottle.', '4320.00', 'assets/img/bags/messenger/travelonmsgrslate.png'),
+(20, 'Commute Laptop Messenger', 30, 'The best classic laptop messenger bag for hauling your laptop, iPad, lunch and layers to class, the office or that meeting two timezones away.', '6856.00', 'assets/img/bags/messenger/timbuk2msgrnautical.png'),
+(21, 'Undeniable Medium Duffle 3.0', 32, 'Stow your athletic gear or fitness essentials stylishly in the Under Armour Undeniable Medium Duffle 3.0. This lightweight and durable dobby polyester gym bag is available in several colors and features Under Armour logo screen-printing. It boasts a spacious, zippered main compartment with a zippered pocket for keeping valuables safe and secure plus plenty of room for your workout wear, uniform, sporting equipment, change of clothing, toiletries, and anything else you need for your exercise routine, for practice, or for the big game. An end compartment contains a ventilated wet/dry shoe compartment, and the Under Armour Undeniable Medium Duffle 3.0 has wrapped webbing haul handles and a padded, non-slip adjustable shoulder strap for carrying comfort and versatility.', '2592.00', 'assets/img/bags/sports/underarmorsportssteel.png'),
+(22, 'Barricade IV Racquet Bag', 1, 'Hit the tennis courts with your personal accessories and up to six racquets stashed inside this sporty duffel bag from Adidas. The Adidas Barricade IV Tour 6 Racquet Bag is made from dobby polyester fabric and features a large shape with a freshPak ventilated pocket to hold wet or dirty items, a thermal lined temperature controlled pocket to prevent your tennis racquet strings from warping in the heat, and a tricot-lined media pocket to hold your cell phone. Detailed with multiple logos and an Adidas kite tag, this duffel features padded haul handles, an EVA foam shoulder strap with Climacool technology, and padded backpack straps that offer versatile carrying options.', '5185.00', 'assets/img/bags/sports/adidasracquetpink.png'),
+(23, 'Golf Bags 4.5 Cart Bag', 13, '9.5 inch 14-way graphite friendly separator top with putter pit and handles, full length club/shaft dividers, 8 zippered pockets including a velour lined valuables pocket & bottle compartment, padded rear position single carry strap with elastic band to secure strap, pen sleeve, towel ring with Velcro glove attachment, umbrella and tee holder, scorecard sleeve & rain hood cover, lightweight dobby nylon.', '7777.00', 'assets/img/bags/sports/hotzsportsred.png'),
+(24, 'Skyline Internal Frame Pack', 24, 'Stay refreshed and comfortably well-organized during your outdoor adventure carrying your necessities in the Outdoor Products Skyline Internal Frame Pack. This lightweight and durable ripstop polyester hydration-compatible backpack (equipment sold separately) features compact, contoured, two-tone styling with bright, embroidered and screen-printed Outdoor Products logo detailing. It boasts a spacious, structured and lined main compartment with a convenient u-shaped, zippered opening and an internal frame pack with a removable aluminum stay; and its vertical-zip front pocket offers additional storage space. Its stretchy mesh side pockets provide quick access to frequently-needed things, and it comes with padded, adjustable shoulder straps and an adjustable waist strap.', '4263.00', 'assets/img/bags/outdoor/outdoorskylineblue.png'),
+(25, 'Outdoor Gear Pack', 27, 'With a rugged design and multiple pockets for storage, this backpack is perfect for all sorts of outdoor adventures and expeditions. The Red Rock Outdoor Gear Engagement Pack is made from polyester fabric and features a large shape and a multi-compartment design with a padded back panel, a composite internal frame, a removable padded waist strap, and adjustable contoured shoulder straps that make it comfortable to carry. This hydration compatible backpack includes a top port hole for your bladder tube, a removable molle butt pouch, molle webbing for adding attachments, and a front zipper pocket that offers quick access to frequently used items.', '3744.00', 'assets/img/bags/outdoor/redrockgearcamo.png'),
+(26, 'Vantage Tactical Backpack', 12, 'The Vantage Tactical Backpack gives you the strategic advantage you have been looking for. This pack is tight and compact and holds your gear close. With an all-around adjustable compression system, sternum, and waist straps, you\'ll have the ability to perform those high velocity vertical and lateral movements with ease. Two main compartment and two accessory pockets give you versatility to customize your gear and your trip the way you want. The MOLLE webbing surrounding the bag helps you expand as needed.', '4608.00', 'assets/img/bags/outdoor/highlandoutdoorblack.png');
 
 -- --------------------------------------------------------
 
@@ -305,7 +328,7 @@ CREATE TABLE `item_categories` (
   `id` int(11) NOT NULL,
   `itemId` int(11) NOT NULL,
   `categoryId` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `item_categories`
@@ -341,7 +364,18 @@ INSERT INTO `item_categories` (`id`, `itemId`, `categoryId`) VALUES
 (27, 14, 2),
 (28, 14, 3),
 (29, 15, 4),
-(31, 17, 4);
+(31, 17, 4),
+(32, 18, 2),
+(33, 18, 3),
+(34, 19, 3),
+(35, 20, 2),
+(36, 20, 3),
+(37, 21, 5),
+(38, 22, 5),
+(39, 23, 5),
+(40, 24, 4),
+(41, 25, 4),
+(42, 26, 4);
 
 -- --------------------------------------------------------
 
@@ -352,17 +386,18 @@ INSERT INTO `item_categories` (`id`, `itemId`, `categoryId`) VALUES
 CREATE TABLE `item_colors` (
   `id` int(11) NOT NULL,
   `itemId` int(11) NOT NULL,
-  `colorId` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  `colorId` int(11) NOT NULL,
+  `colorImg` varchar(255) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `item_colors`
 --
 
-INSERT INTO `item_colors` (`id`, `itemId`, `colorId`) VALUES
-(1, 1, 13),
-(2, 2, 40),
-(3, 2, 42);
+INSERT INTO `item_colors` (`id`, `itemId`, `colorId`, `colorImg`) VALUES
+(1, 1, 13, 'assets/img/bags/backpack/adidasbackblue.png'),
+(2, 2, 40, 'assets/img/bags/backpack/vagabondbackkhaki.png'),
+(3, 2, 42, 'assets/img/bags/backpack/vagabondbackmilitary.png');
 
 -- --------------------------------------------------------
 
@@ -375,7 +410,7 @@ CREATE TABLE `orders` (
   `acctId` int(11) NOT NULL,
   `itemId` int(11) NOT NULL,
   `quantity` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `orders`
@@ -383,7 +418,12 @@ CREATE TABLE `orders` (
 
 INSERT INTO `orders` (`orderId`, `acctId`, `itemId`, `quantity`) VALUES
 (1, 2, 4, 3),
-(2, 2, 8, 1);
+(2, 2, 8, 1),
+(3, 0, 10, 2),
+(4, 0, 13, 1),
+(5, 0, 2, 2),
+(6, 3, 12, 2),
+(7, 3, 9, 1);
 
 -- --------------------------------------------------------
 
@@ -394,7 +434,7 @@ INSERT INTO `orders` (`orderId`, `acctId`, `itemId`, `quantity`) VALUES
 CREATE TABLE `promos` (
   `id` int(11) NOT NULL,
   `type` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -408,7 +448,7 @@ CREATE TABLE `users` (
   `lastName` varchar(255) NOT NULL,
   `address` varchar(255) NOT NULL,
   `email` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `users`
@@ -416,7 +456,9 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`userId`, `firstName`, `lastName`, `address`, `email`) VALUES
 (1, 'admin', 'admin', '', ''),
-(2, 'Tuitt', 'Bootcamp', 'GMA-Kamuning', 'tuitt@tuitt.com');
+(2, 'Tuitt', 'Bootcamp', 'GMA-Kamuning', 'tuitt@tuitt.com'),
+(3, 'Patrick', 'Legaspi', 'Las Pinas', 'patrick@email'),
+(6, 'test2', '', '1234', 'test2@test2.com');
 
 --
 -- Indexes for dumped tables
@@ -462,6 +504,12 @@ ALTER TABLE `categories`
 --
 ALTER TABLE `colors`
   ADD PRIMARY KEY (`colorId`);
+
+--
+-- Indexes for table `favorites`
+--
+ALTER TABLE `favorites`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `items`
@@ -514,7 +562,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `accounts`
 --
 ALTER TABLE `accounts`
-  MODIFY `acctId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `acctId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `accounttype`
@@ -526,7 +574,7 @@ ALTER TABLE `accounttype`
 -- AUTO_INCREMENT for table `brands`
 --
 ALTER TABLE `brands`
-  MODIFY `brandId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
+  MODIFY `brandId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
 
 --
 -- AUTO_INCREMENT for table `cart`
@@ -547,16 +595,22 @@ ALTER TABLE `colors`
   MODIFY `colorId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=90;
 
 --
+-- AUTO_INCREMENT for table `favorites`
+--
+ALTER TABLE `favorites`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
 -- AUTO_INCREMENT for table `items`
 --
 ALTER TABLE `items`
-  MODIFY `itemId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `itemId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
 
 --
 -- AUTO_INCREMENT for table `item_categories`
 --
 ALTER TABLE `item_categories`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
 
 --
 -- AUTO_INCREMENT for table `item_colors`
@@ -568,7 +622,7 @@ ALTER TABLE `item_colors`
 -- AUTO_INCREMENT for table `orders`
 --
 ALTER TABLE `orders`
-  MODIFY `orderId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `orderId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `promos`
@@ -580,52 +634,7 @@ ALTER TABLE `promos`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `userId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
-
---
--- Constraints for dumped tables
---
-
---
--- Constraints for table `accounts`
---
-ALTER TABLE `accounts`
-  ADD CONSTRAINT `accounts_ibfk_1` FOREIGN KEY (`acctType`) REFERENCES `accounttype` (`id`) ON UPDATE CASCADE,
-  ADD CONSTRAINT `accounts_ibfk_2` FOREIGN KEY (`userId`) REFERENCES `users` (`userId`) ON UPDATE CASCADE;
-
---
--- Constraints for table `cart`
---
-ALTER TABLE `cart`
-  ADD CONSTRAINT `cart_ibfk_2` FOREIGN KEY (`itemId`) REFERENCES `items` (`itemId`) ON UPDATE CASCADE,
-  ADD CONSTRAINT `cart_ibfk_3` FOREIGN KEY (`acctId`) REFERENCES `accounts` (`acctId`) ON UPDATE CASCADE;
-
---
--- Constraints for table `items`
---
-ALTER TABLE `items`
-  ADD CONSTRAINT `items_ibfk_4` FOREIGN KEY (`brandId`) REFERENCES `brands` (`brandId`) ON UPDATE CASCADE;
-
---
--- Constraints for table `item_categories`
---
-ALTER TABLE `item_categories`
-  ADD CONSTRAINT `item_categories_ibfk_1` FOREIGN KEY (`itemId`) REFERENCES `items` (`itemId`) ON UPDATE CASCADE,
-  ADD CONSTRAINT `item_categories_ibfk_2` FOREIGN KEY (`categoryId`) REFERENCES `categories` (`id`) ON UPDATE CASCADE;
-
---
--- Constraints for table `item_colors`
---
-ALTER TABLE `item_colors`
-  ADD CONSTRAINT `item_colors_ibfk_1` FOREIGN KEY (`colorId`) REFERENCES `colors` (`colorId`) ON UPDATE CASCADE,
-  ADD CONSTRAINT `item_colors_ibfk_2` FOREIGN KEY (`itemId`) REFERENCES `items` (`itemId`) ON UPDATE CASCADE;
-
---
--- Constraints for table `orders`
---
-ALTER TABLE `orders`
-  ADD CONSTRAINT `orders_ibfk_1` FOREIGN KEY (`itemId`) REFERENCES `items` (`itemId`) ON UPDATE CASCADE,
-  ADD CONSTRAINT `orders_ibfk_2` FOREIGN KEY (`acctId`) REFERENCES `accounts` (`acctId`) ON UPDATE CASCADE;
+  MODIFY `userId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

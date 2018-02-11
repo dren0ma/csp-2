@@ -4,12 +4,12 @@ require "dbconnect.php";
 
 /* form values */
 
-$name = $_POST['itemName'];
-$brand = $_POST['itemBrand'];
-$description = $_POST['itemDescription'];
-$price = $_POST['itemPrice'];
-$image = $_POST['itemImage'];
-$category = $_POST['itemCategory'];
+$name = mysqli_real_escape_string($dbcon, $_POST['itemName']);
+$brand = mysqli_real_escape_string($dbcon, $_POST['itemBrand']);
+$description = mysqli_real_escape_string($dbcon, $_POST['itemDescription']);
+$price = mysqli_real_escape_string($dbcon, $_POST['itemPrice']);
+$image = mysqli_real_escape_string($dbcon, $_POST['itemImage']);
+$category = mysqli_real_escape_string($dbcon, $_POST['itemCategory']);
 
 $sql = "SELECT * FROM brands WHERE brand = $brand";
 $result = mysqli_query($dbcon, $sql);
