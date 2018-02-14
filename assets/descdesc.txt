@@ -1,5 +1,5 @@
 assets/img/bags/backpack/
-16 DONE 
+
 
 
 INSERT INTO item_categories (itemId, categoryId)  VALUES 
@@ -18,7 +18,18 @@ INSERT INTO item_categories (itemId, categoryId)  VALUES
 (13, 2), (13, 3),
 (14, 2), (14, 3)
 (15, 4),
-(16, 4)
+(17, 4),
+(18, 2), (18, 3),
+(19, 3),
+(20, 2), (20, 3),
+(21, 5),
+(22, 5),
+(23, 5),
+(24, 4),
+(25, 4),
+(26, 4)
+
+
 
 
 

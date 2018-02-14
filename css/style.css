@@ -7,8 +7,8 @@ body {
 }
 
 
-#form-login-col {
-	height: 50vh;
+#form-login-col, #contact-col {
+	min-height: 50vh;
 }
 
 footer, .footer, .footp {
@@ -95,6 +95,17 @@ figure img {
 
 .hide-users   {
     display: none;
+}
+
+
+/*font colors*/
+
+.fav-color {
+    color: #DAA520;
+}
+
+.price-color {
+    color: green;
 }
 
 

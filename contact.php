@@ -6,14 +6,17 @@ function display_content() {
 require 'dbconnect.php';
 
 ?>
-<!-- <div class="card-image">
-	<figure class="image is-square">
-		<img src="assets/img/additem.png" alt="Add Item">
-	</figure>
-</div> -->
-<p class="image is-square img-size">
-	<img src="assets/img/additem.png" alt="">
-</p>
+<div class="section" id="contact-col">
+	<p class="title is-5">Contact Us</p>
+	<p>Email: helpdesk@tuitt.com</p>
+	<p>Address: 3rd Floor Caswynn Building, No. 134 Timog Avenue, Sacred Heart, Quezon City </p>
+	<p>Contact No.: (02) 282-9520</p>
+</div>
+<div class="section">
+	<p>
+		Disclaimer: No copyright infringement is intended. This website was created only for educational purposes and not for profit. Some asset/s used are not owned by the developer/s unless otherwise stated; full credit goes to the owner.
+	</p>
+</div>
 
 <?php
 }	//end of function display

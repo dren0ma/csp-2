@@ -88,7 +88,7 @@ $('#regConpassword').on('input', function(){
 	}
 })
 
-
+// cart qty buttons
 
 $('.btnLeft').click(function(){
 	var qtyCartId = $(this).data('id');
@@ -135,6 +135,35 @@ $('.btnRight').click(function(){
 				}
 			})
 })
+
+// viewitem qty buttons
+
+$('.viewbtnLeft').click(function(){
+	var price = $('#itemViewPrice').data('price');
+	var qty = parseInt($('#qtyView').text());
+	if (qty > 1) {
+		qty--;
+		$('#qtyView').html(qty);
+		$('#qtyView2').val(qty);
+		$('#itemViewPrice').html(price*qty);
+	}
+	else {
+		$('#qtyView').html(1);
+	}
+})
+
+$('.viewbtnRight').click(function(){
+	var price = $('#itemViewPrice').data('price');
+	var qty = parseInt($('#qtyView').text());
+	qty++;
+	$('#qtyView').html(qty);
+	$('#qtyView2').val(qty);
+	$('#itemViewPrice').html(price*qty);
+})
+
+
+
+
 
 $('.order-dash-trigger').click(function(){
 	$('#dash-users').addClass('hide-users');

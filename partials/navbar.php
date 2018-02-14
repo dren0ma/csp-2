@@ -38,7 +38,7 @@ else {
 			<a class="navbar-item" href="shop.php">
 				Shop
 			</a>
-			<a class="navbar-item" href="disclaimer.php">
+			<a class="navbar-item" href="contact.php">
 				Contact Us
 			</a>
 			<div class="navbar-item">

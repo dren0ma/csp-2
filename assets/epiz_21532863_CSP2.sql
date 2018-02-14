@@ -1,25 +1,23 @@
 -- phpMyAdmin SQL Dump
--- version 4.7.4
--- https://www.phpmyadmin.net/
+-- version 3.5.8.2
+-- http://www.phpmyadmin.net
 --
--- Host: 127.0.0.1
--- Generation Time: Feb 11, 2018 at 06:00 PM
--- Server version: 10.1.30-MariaDB
--- PHP Version: 7.1.13
+-- Host: sql207.epizy.com
+-- Generation Time: Feb 04, 2018 at 09:50 PM
+-- Server version: 5.6.35-81.0
+-- PHP Version: 5.3.3
 
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
-START TRANSACTION;
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
 
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
+/*!40101 SET NAMES utf8 */;
 
 --
--- Database: `plegaspi-csp2`
+-- Database: `epiz_21532863_CSP2`
 --
 
 -- --------------------------------------------------------
@@ -28,13 +26,17 @@ SET time_zone = "+00:00";
 -- Table structure for table `accounts`
 --
 
-CREATE TABLE `accounts` (
-  `acctId` int(11) NOT NULL,
+CREATE TABLE IF NOT EXISTS `accounts` (
+  `acctId` int(11) NOT NULL AUTO_INCREMENT,
   `username` varchar(255) NOT NULL,
   `password` varchar(255) NOT NULL,
   `acctType` int(11) NOT NULL,
-  `userId` int(11) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+  `userId` int(11) NOT NULL,
+  PRIMARY KEY (`acctId`),
+  UNIQUE KEY `userId_2` (`userId`),
+  KEY `acctType` (`acctType`),
+  KEY `userId` (`userId`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
 
 --
 -- Dumping data for table `accounts`
@@ -43,8 +45,7 @@ CREATE TABLE `accounts` (
 INSERT INTO `accounts` (`acctId`, `username`, `password`, `acctType`, `userId`) VALUES
 (1, 'admin', '7110eda4d09e062aa5e4a390b0a572ac0d2c0220', 1, 1),
 (2, 'tuitt', '7110eda4d09e062aa5e4a390b0a572ac0d2c0220', 2, 2),
-(3, 'Patrick', '7110eda4d09e062aa5e4a390b0a572ac0d2c0220', 1, 3),
-(6, 'test2', '7110eda4d09e062aa5e4a390b0a572ac0d2c0220', 2, 6);
+(3, 'Patrick', '7110eda4d09e062aa5e4a390b0a572ac0d2c0220', 2, 3);
 
 -- --------------------------------------------------------
 
@@ -52,10 +53,11 @@ INSERT INTO `accounts` (`acctId`, `username`, `password`, `acctType`, `userId`) 
 -- Table structure for table `accounttype`
 --
 
-CREATE TABLE `accounttype` (
-  `id` int(11) NOT NULL,
-  `type` varchar(255) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+CREATE TABLE IF NOT EXISTS `accounttype` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `type` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
 
 --
 -- Dumping data for table `accounttype`
@@ -71,10 +73,11 @@ INSERT INTO `accounttype` (`id`, `type`) VALUES
 -- Table structure for table `brands`
 --
 
-CREATE TABLE `brands` (
-  `brandId` int(11) NOT NULL,
-  `brand` varchar(255) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+CREATE TABLE IF NOT EXISTS `brands` (
+  `brandId` int(11) NOT NULL AUTO_INCREMENT,
+  `brand` varchar(255) NOT NULL,
+  PRIMARY KEY (`brandId`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=39 ;
 
 --
 -- Dumping data for table `brands`
@@ -126,12 +129,15 @@ INSERT INTO `brands` (`brandId`, `brand`) VALUES
 -- Table structure for table `cart`
 --
 
-CREATE TABLE `cart` (
-  `id` int(11) NOT NULL,
+CREATE TABLE IF NOT EXISTS `cart` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `acctId` int(11) NOT NULL,
   `itemId` int(11) NOT NULL,
-  `quantity` int(11) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+  `quantity` int(11) NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `itemId` (`itemId`),
+  KEY `cart_ibfk_3` (`acctId`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -139,10 +145,11 @@ CREATE TABLE `cart` (
 -- Table structure for table `categories`
 --
 
-CREATE TABLE `categories` (
-  `id` int(11) NOT NULL,
-  `type` varchar(255) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+CREATE TABLE IF NOT EXISTS `categories` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `type` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
 
 --
 -- Dumping data for table `categories`
@@ -161,10 +168,11 @@ INSERT INTO `categories` (`id`, `type`) VALUES
 -- Table structure for table `colors`
 --
 
-CREATE TABLE `colors` (
-  `colorId` int(11) NOT NULL,
-  `name` varchar(255) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+CREATE TABLE IF NOT EXISTS `colors` (
+  `colorId` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) NOT NULL,
+  PRIMARY KEY (`colorId`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=90 ;
 
 --
 -- Dumping data for table `colors`
@@ -264,28 +272,19 @@ INSERT INTO `colors` (`colorId`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `favorites`
---
-
-CREATE TABLE `favorites` (
-  `id` int(11) NOT NULL,
-  `itemId` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
--- --------------------------------------------------------
-
---
 -- Table structure for table `items`
 --
 
-CREATE TABLE `items` (
-  `itemId` int(11) NOT NULL,
+CREATE TABLE IF NOT EXISTS `items` (
+  `itemId` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(255) NOT NULL,
   `brandId` int(11) NOT NULL,
   `description` text NOT NULL,
   `price` decimal(30,2) NOT NULL,
-  `img` varchar(255) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+  `img` varchar(255) NOT NULL,
+  PRIMARY KEY (`itemId`),
+  KEY `brandId` (`brandId`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=27 ;
 
 --
 -- Dumping data for table `items`
@@ -297,26 +296,26 @@ INSERT INTO `items` (`itemId`, `name`, `brandId`, `description`, `price`, `img`)
 (3, 'Pattern Printed Backpack', 7, 'Available in a variety of bold patterns and prints, this backpack offers stylish storage for everyday use. The Everest Pattern Printed Backpack is made from durable polyester fabric and features a medium sized shape in a classic silhouette with a top grab handle and adjustable straps that make it comfortable to carry. Detailed with a zip around main compartment, this backpack offers plenty of storage for school books or personal items, and it includes a separate front zipper pocket to hold small items and frequently used accessories. A D-ring on the front provides a convenient way to add a key clip or an extra pouch.', '1152.00', 'assets/img/bags/backpack/everestpatternethnic.png'),
 (4, 'Detail Pack', 5, 'Multiple pockets make it easy to organize all of your small accessories and portable gadgets inside this roomy backpack from Dakine. The Dakine Detail Pack is made from polyester fabric with faux suede accents and a Dakine logo patch on the front. This backpack features a roomy main compartment with a padded laptop sleeve and plenty of room for school books and folders or extra clothing layers, a secondary zip around compartment with organizer pockets to hold your cell phone, pens, keys, and other small items, and an exterior zipper pocket for frequently used accessories. Adjustable, padded shoulder straps and a sternum strap make it comfortable to carry for all day use.', '3918.00', 'assets/img/bags/backpack/dakinebacktabor.png'),
 (5, 'Rucksack No.21', 9, 'Classic backpack made from strong, waxed fabric with details in natural-toned leather. The main compartment has pockets for a computer and sitting pad.', '10079.00', 'assets/img/bags/backpack/fjallravenbackblack.png'),
-(6, 'Gearbox Backpack', 21, 'The Gearbox Backpack features a top-loading main compartment and front-access stash pocket with organization panel for the secure storage and transport of the essentials you\'ll need throughout the day. Padded back panels and shoulder straps provide comfortable carrying, while a dedicated zip pocket stores your laptop. Designed with a fleece-lined eyewear pocket and dual side pockets, this carry-all Oakley backpack gives you quick access to the items you\'re always using.', '6913.00', 'assets/img/bags/backpack/oakleybackblack.png'),
+(6, 'Gearbox Backpack', 21, 'The Gearbox Backpack features a top-loading main compartment and front-access stash pocket with organization panel for the secure storage and transport of the essentials you''ll need throughout the day. Padded back panels and shoulder straps provide comfortable carrying, while a dedicated zip pocket stores your laptop. Designed with a fleece-lined eyewear pocket and dual side pockets, this carry-all Oakley backpack gives you quick access to the items you''re always using.', '6913.00', 'assets/img/bags/backpack/oakleybackblack.png'),
 (7, 'Peterson 9-Pocket Backpack', 25, 'Stylish business laptop backpack made with durable nylon. With two main compartments and 7 additional accessories compartments, this backpack has enough room for all your business essentials. Travel in comfort with padded shoulder straps and a padded mesh back panel. When moving through the airport, use the trolley handle pass-through strap to rest the backpack upon luggage.', '11523.00', 'assets/img/bags/backpack/penguinbacknavy.png'),
 (8, 'Duel Backpack', 8, 'Keep your gear or school supplied in one place in this 6 pocket tablet and laptop backpack.', '2880.00', 'assets/img/bags/backpack/filabackteal.png'),
 (9, 'Agave Laptop Backpack', 16, 'Make the daily commute to school with your laptop, tablet, books, and small accessories organized neatly inside this backpack from JanSport. The JanSport Agave backpack is made from durable polyester dobby fabric and features a classic shape with multiple compartments for organization and AirCore shoulder straps that offer comfort for all day use. This backpack has two large main compartments and includes a padded sleeve for your laptop and iPad or 3 liter hydration system, a quick access loft pocket, dual side water bottle pockets, and a front organizer compartment loaded with pockets for your cell phone, pens, keys, mp3 player, and other small items. Other features of this pack include a fully padded back panel, a front access zipper pocket, and side compression straps.', '4033.00', 'assets/img/bags/backpack/jansportagavemutedgreen.png'),
 (10, 'Recruit Backpack', 32, 'Loaded with pockets to hold all of your gear, this backpack is perfect for everyday travel. The Under Armour Recruit Backpack is made from durable polyester fabric with an abrasion resistant bottom panel and features a large shape with interior and exterior storage pockets and padded HeatGear shoulder straps that make it comfortable to carry. This backpack includes a roomy main compartment, a soft lined laptop sleeve, two side water bottle pockets, and a front organizer compartment with a key clip and slip pockets to hold small accessories. A water repellent valuables pocket on the front panel provides safe and convenient storage for your cell phone, sunglasses, or other personal items.', '3744.00', 'assets/img/bags/backpack/underarmorbackblack.png'),
-(11, 'Laptop Backpack', 20, 'Carry all your work, school or play essentials in graphic style in the Laurex Laptop Backpack. This cool pack for women features a roomy interior with a padded 17\' laptop computer compartment, plus plenty of room for your books, binders, folders, and other large gear. A full organizational panel offers pen/lipstick loops, card slots, and an open pocket for quick access to your cell phone. Exterior zippered pockets provide extra storage or stow last-minute items, and a flat pocket for documents is hidden by the flap. The Laurex Laptop Backpack has a heavy duty zipper and a net in a pocket which serves as a water bottle holder. A handle on the top allows you to carry it without putting it on, and a padded back panel and shoulder straps make this the perfectly comfortable everyday pack for women.', '5185.00', 'assets/img/bags/backpack/laurexbackred.png'),
+(11, 'Laptop Backpack', 20, 'Carry all your work, school or play essentials in graphic style in the Laurex Laptop Backpack. This cool pack for women features a roomy interior with a padded 17'' laptop computer compartment, plus plenty of room for your books, binders, folders, and other large gear. A full organizational panel offers pen/lipstick loops, card slots, and an open pocket for quick access to your cell phone. Exterior zippered pockets provide extra storage or stow last-minute items, and a flat pocket for documents is hidden by the flap. The Laurex Laptop Backpack has a heavy duty zipper and a net in a pocket which serves as a water bottle holder. A handle on the top allows you to carry it without putting it on, and a padded back panel and shoulder straps make this the perfectly comfortable everyday pack for women.', '5185.00', 'assets/img/bags/backpack/laurexbackred.png'),
 (12, 'Scansmart TSA Backpack', 29, 'This backpack offers a stylish look and makes air travel a little bit easier. The SwissGear Travel Gear Scansmart TSA Laptop Backpack is crafted from durable ballistic polyester and features a well-constructed design with a checkpoint friendly laptop compartment, an Airflow back system for easy carrying, and multiple pockets for storage and organization. Detailed with contoured shoulder straps that make it comfortable to carry, this TSA-approved backpack includes a protective laptop compartment, accordion file holders for books, binders, and documents, and a convenient organizer to hold all sorts of small items and personal accessories.', '7490.00', 'assets/img/bags/backpack/swissgearbackred.png'),
-(13, 'Urban Messenger', 26, 'Keep your laptop computer stylishly well-protected while you\'re on-the-go in the Piel Four-Section Urban Laptop Messenger. This soft, smooth, supple, and luxurious naked leather messenger bag features flap-over construction and bright accents, and it\'s available in several colors. Its spacious, lined interior contains a fully-padded laptop computer compartment; a file pocket; and an organizational panel with pen loops, a full-length zippered pocket, a small zippered valuables pocket, and a flap pocket. The Piel Four-Section Urban Laptop Messenger comes with an adjustable shoulder strap for your carrying comfort.', '27077.00', 'assets/img/bags/messenger/pielmsgrblack.png'),
+(13, 'Urban Messenger', 26, 'Keep your laptop computer stylishly well-protected while you''re on-the-go in the Piel Four-Section Urban Laptop Messenger. This soft, smooth, supple, and luxurious naked leather messenger bag features flap-over construction and bright accents, and it''s available in several colors. Its spacious, lined interior contains a fully-padded laptop computer compartment; a file pocket; and an organizational panel with pen loops, a full-length zippered pocket, a small zippered valuables pocket, and a flap pocket. The Piel Four-Section Urban Laptop Messenger comes with an adjustable shoulder strap for your carrying comfort.', '27077.00', 'assets/img/bags/messenger/pielmsgrblack.png'),
 (14, 'Graham Messenger', 10, 'A man on-the-go needs something in his back pocket (or over his shoulder) to carry him through the day. In our opinion, the Graham messenger fits the bill in lighter-weight fabric for spring and extra room for his laptop.', '8527.00', 'assets/img/bags/messenger/fossilmsgrgrey.png'),
 (15, 'Hiking Pack', 7, 'Embark on your next rugged adventure with all of your essentials packed inside this hiking backpack from Everest. The Everest Hiking Pack is made from durable polyester and features a large shape and a multi-compartment design with a snap buckle closure, a rugged bottom, and multiple pockets for organization. In addition to the top-loading main compartment, this pack includes zippered side pockets, a front bungee, and an attachment ring for accessories or gear pouches. Available in a variety of colors to suit your mood and style, this backpack is perfect for long hikes, camping trips, weekend getaways, and all sorts of outdoor excursions.', '3684.00', 'assets/img/bags/outdoor/everestoutdoorgreen.png'),
 (17, 'Talon Hiking Pack', 23, 'The Talon is lighter, nimbler and more comfortable than ever. With an updated AirScape backpanel to keep you dry, a continuous hipbelt wrap for incredible comfort and a suspension system that stabilized loads for dynamic activities, this is the ideal pack for minimalist backpacking, day hikes and more.																																					', '8066.00', 'assets/img/bags/outdoor/ospreyoutdoorultramarine.png'),
 (18, 'Urban Messenger', 3, 'Add a stylish touch to your daily commute with this two-tone colorblocked messenger bag from Bellino. Made from durable poly/canvas fabric, the Bellino Urban Messenger bag features an urban-inspired design with a flap front silhouette, two secure buckle closures, and multiple pockets for storage and organization. Detailed with a roomy main compartment, this messenger bag includes a padded laptop sleeve, a zipper pocket to hold accessories, a side mesh water bottle pocket, and a vertical zipper pocket to hold your iPad or tablet. Beneath the flap, an organizer panel with a pen sleeve, card slots, and slip pockets offers convenient storage for all of your frequently used accessories.', '2470.00', 'assets/img/bags/messenger/bellinormsgrblue.png'),
-(19, 'Anti-Theft Messenger', 31, 'Keep your most important items safe when you\'re on the go with this anti-theft messenger bag from Travelon. The Travelon Anti-Theft Urban N/S Messenger Bag is made from durable nylon fabric and features slash-proof construction with an adjustable cut-proof shoulder strap and a locking main compartment. This messenger bag has a flap front design with multiple interior compartments that include a pocket for your iPad or tablet, an RFID card slot to protect against identity thieves, and a pocket for your cell phone. A pen loop and a zipper pocket underneath the flap offer added storage for small items while an expansion pocket provides storage for a water bottle.', '4320.00', 'assets/img/bags/messenger/travelonmsgrslate.png'),
+(19, 'Anti-Theft Messenger', 31, 'Keep your most important items safe when you''re on the go with this anti-theft messenger bag from Travelon. The Travelon Anti-Theft Urban N/S Messenger Bag is made from durable nylon fabric and features slash-proof construction with an adjustable cut-proof shoulder strap and a locking main compartment. This messenger bag has a flap front design with multiple interior compartments that include a pocket for your iPad or tablet, an RFID card slot to protect against identity thieves, and a pocket for your cell phone. A pen loop and a zipper pocket underneath the flap offer added storage for small items while an expansion pocket provides storage for a water bottle.', '4320.00', 'assets/img/bags/messenger/travelonmsgrslate.png'),
 (20, 'Commute Laptop Messenger', 30, 'The best classic laptop messenger bag for hauling your laptop, iPad, lunch and layers to class, the office or that meeting two timezones away.', '6856.00', 'assets/img/bags/messenger/timbuk2msgrnautical.png'),
 (21, 'Undeniable Medium Duffle 3.0', 32, 'Stow your athletic gear or fitness essentials stylishly in the Under Armour Undeniable Medium Duffle 3.0. This lightweight and durable dobby polyester gym bag is available in several colors and features Under Armour logo screen-printing. It boasts a spacious, zippered main compartment with a zippered pocket for keeping valuables safe and secure plus plenty of room for your workout wear, uniform, sporting equipment, change of clothing, toiletries, and anything else you need for your exercise routine, for practice, or for the big game. An end compartment contains a ventilated wet/dry shoe compartment, and the Under Armour Undeniable Medium Duffle 3.0 has wrapped webbing haul handles and a padded, non-slip adjustable shoulder strap for carrying comfort and versatility.', '2592.00', 'assets/img/bags/sports/underarmorsportssteel.png'),
 (22, 'Barricade IV Racquet Bag', 1, 'Hit the tennis courts with your personal accessories and up to six racquets stashed inside this sporty duffel bag from Adidas. The Adidas Barricade IV Tour 6 Racquet Bag is made from dobby polyester fabric and features a large shape with a freshPak ventilated pocket to hold wet or dirty items, a thermal lined temperature controlled pocket to prevent your tennis racquet strings from warping in the heat, and a tricot-lined media pocket to hold your cell phone. Detailed with multiple logos and an Adidas kite tag, this duffel features padded haul handles, an EVA foam shoulder strap with Climacool technology, and padded backpack straps that offer versatile carrying options.', '5185.00', 'assets/img/bags/sports/adidasracquetpink.png'),
 (23, 'Golf Bags 4.5 Cart Bag', 13, '9.5 inch 14-way graphite friendly separator top with putter pit and handles, full length club/shaft dividers, 8 zippered pockets including a velour lined valuables pocket & bottle compartment, padded rear position single carry strap with elastic band to secure strap, pen sleeve, towel ring with Velcro glove attachment, umbrella and tee holder, scorecard sleeve & rain hood cover, lightweight dobby nylon.', '7777.00', 'assets/img/bags/sports/hotzsportsred.png'),
 (24, 'Skyline Internal Frame Pack', 24, 'Stay refreshed and comfortably well-organized during your outdoor adventure carrying your necessities in the Outdoor Products Skyline Internal Frame Pack. This lightweight and durable ripstop polyester hydration-compatible backpack (equipment sold separately) features compact, contoured, two-tone styling with bright, embroidered and screen-printed Outdoor Products logo detailing. It boasts a spacious, structured and lined main compartment with a convenient u-shaped, zippered opening and an internal frame pack with a removable aluminum stay; and its vertical-zip front pocket offers additional storage space. Its stretchy mesh side pockets provide quick access to frequently-needed things, and it comes with padded, adjustable shoulder straps and an adjustable waist strap.', '4263.00', 'assets/img/bags/outdoor/outdoorskylineblue.png'),
-(25, 'Outdoor Gear Pack', 27, 'With a rugged design and multiple pockets for storage, this backpack is perfect for all sorts of outdoor adventures and expeditions. The Red Rock Outdoor Gear Engagement Pack is made from polyester fabric and features a large shape and a multi-compartment design with a padded back panel, a composite internal frame, a removable padded waist strap, and adjustable contoured shoulder straps that make it comfortable to carry. This hydration compatible backpack includes a top port hole for your bladder tube, a removable molle butt pouch, molle webbing for adding attachments, and a front zipper pocket that offers quick access to frequently used items.', '3744.00', 'assets/img/bags/outdoor/redrockgearcamo.png'),
-(26, 'Vantage Tactical Backpack', 12, 'The Vantage Tactical Backpack gives you the strategic advantage you have been looking for. This pack is tight and compact and holds your gear close. With an all-around adjustable compression system, sternum, and waist straps, you\'ll have the ability to perform those high velocity vertical and lateral movements with ease. Two main compartment and two accessory pockets give you versatility to customize your gear and your trip the way you want. The MOLLE webbing surrounding the bag helps you expand as needed.', '4608.00', 'assets/img/bags/outdoor/highlandoutdoorblack.png');
+(25, 'Outdoor Gear Engagement Pack', 27, 'With a rugged design and multiple pockets for storage, this backpack is perfect for all sorts of outdoor adventures and expeditions. The Red Rock Outdoor Gear Engagement Pack is made from polyester fabric and features a large shape and a multi-compartment design with a padded back panel, a composite internal frame, a removable padded waist strap, and adjustable contoured shoulder straps that make it comfortable to carry. This hydration compatible backpack includes a top port hole for your bladder tube, a removable molle butt pouch, molle webbing for adding attachments, and a front zipper pocket that offers quick access to frequently used items.', '3744.00', 'assets/img/bags/outdoor/redrockgearcamo.png'),
+(26, 'Vantage Tactical Backpack', 12, 'The Vantage Tactical Backpack gives you the strategic advantage you have been looking for. This pack is tight and compact and holds your gear close. With an all-around adjustable compression system, sternum, and waist straps, you''ll have the ability to perform those high velocity vertical and lateral movements with ease. Two main compartment and two accessory pockets give you versatility to customize your gear and your trip the way you want. The MOLLE webbing surrounding the bag helps you expand as needed.', '4608.00', 'assets/img/bags/outdoor/highlandoutdoorblack.png');
 
 -- --------------------------------------------------------
 
@@ -324,11 +323,14 @@ INSERT INTO `items` (`itemId`, `name`, `brandId`, `description`, `price`, `img`)
 -- Table structure for table `item_categories`
 --
 
-CREATE TABLE `item_categories` (
-  `id` int(11) NOT NULL,
+CREATE TABLE IF NOT EXISTS `item_categories` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `itemId` int(11) NOT NULL,
-  `categoryId` int(11) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+  `categoryId` int(11) NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `itemId` (`itemId`),
+  KEY `categoryId` (`categoryId`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=43 ;
 
 --
 -- Dumping data for table `item_categories`
@@ -383,21 +385,23 @@ INSERT INTO `item_categories` (`id`, `itemId`, `categoryId`) VALUES
 -- Table structure for table `item_colors`
 --
 
-CREATE TABLE `item_colors` (
-  `id` int(11) NOT NULL,
+CREATE TABLE IF NOT EXISTS `item_colors` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `itemId` int(11) NOT NULL,
   `colorId` int(11) NOT NULL,
-  `colorImg` varchar(255) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+  PRIMARY KEY (`id`),
+  KEY `colorId` (`colorId`),
+  KEY `itemId` (`itemId`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
 
 --
 -- Dumping data for table `item_colors`
 --
 
-INSERT INTO `item_colors` (`id`, `itemId`, `colorId`, `colorImg`) VALUES
-(1, 1, 13, 'assets/img/bags/backpack/adidasbackblue.png'),
-(2, 2, 40, 'assets/img/bags/backpack/vagabondbackkhaki.png'),
-(3, 2, 42, 'assets/img/bags/backpack/vagabondbackmilitary.png');
+INSERT INTO `item_colors` (`id`, `itemId`, `colorId`) VALUES
+(1, 1, 13),
+(2, 2, 40),
+(3, 2, 42);
 
 -- --------------------------------------------------------
 
@@ -405,12 +409,15 @@ INSERT INTO `item_colors` (`id`, `itemId`, `colorId`, `colorImg`) VALUES
 -- Table structure for table `orders`
 --
 
-CREATE TABLE `orders` (
-  `orderId` int(11) NOT NULL,
+CREATE TABLE IF NOT EXISTS `orders` (
+  `orderId` int(11) NOT NULL AUTO_INCREMENT,
   `acctId` int(11) NOT NULL,
   `itemId` int(11) NOT NULL,
-  `quantity` int(11) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+  `quantity` int(11) NOT NULL,
+  PRIMARY KEY (`orderId`),
+  KEY `itemId` (`itemId`),
+  KEY `orders_ibfk_2` (`acctId`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=8 ;
 
 --
 -- Dumping data for table `orders`
@@ -431,10 +438,11 @@ INSERT INTO `orders` (`orderId`, `acctId`, `itemId`, `quantity`) VALUES
 -- Table structure for table `promos`
 --
 
-CREATE TABLE `promos` (
-  `id` int(11) NOT NULL,
-  `type` varchar(255) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+CREATE TABLE IF NOT EXISTS `promos` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `type` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -442,13 +450,14 @@ CREATE TABLE `promos` (
 -- Table structure for table `users`
 --
 
-CREATE TABLE `users` (
-  `userId` int(11) NOT NULL,
+CREATE TABLE IF NOT EXISTS `users` (
+  `userId` int(11) NOT NULL AUTO_INCREMENT,
   `firstName` varchar(255) NOT NULL,
   `lastName` varchar(255) NOT NULL,
   `address` varchar(255) NOT NULL,
-  `email` varchar(255) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+  `email` varchar(255) NOT NULL,
+  PRIMARY KEY (`userId`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
 
 --
 -- Dumping data for table `users`
@@ -457,185 +466,7 @@ CREATE TABLE `users` (
 INSERT INTO `users` (`userId`, `firstName`, `lastName`, `address`, `email`) VALUES
 (1, 'admin', 'admin', '', ''),
 (2, 'Tuitt', 'Bootcamp', 'GMA-Kamuning', 'tuitt@tuitt.com'),
-(3, 'Patrick', 'Legaspi', 'Las Pinas', 'patrick@email'),
-(6, 'test2', '', '1234', 'test2@test2.com');
-
---
--- Indexes for dumped tables
---
-
---
--- Indexes for table `accounts`
---
-ALTER TABLE `accounts`
-  ADD PRIMARY KEY (`acctId`),
-  ADD UNIQUE KEY `userId_2` (`userId`),
-  ADD KEY `acctType` (`acctType`),
-  ADD KEY `userId` (`userId`);
-
---
--- Indexes for table `accounttype`
---
-ALTER TABLE `accounttype`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `brands`
---
-ALTER TABLE `brands`
-  ADD PRIMARY KEY (`brandId`);
-
---
--- Indexes for table `cart`
---
-ALTER TABLE `cart`
-  ADD PRIMARY KEY (`id`),
-  ADD KEY `itemId` (`itemId`),
-  ADD KEY `cart_ibfk_3` (`acctId`);
-
---
--- Indexes for table `categories`
---
-ALTER TABLE `categories`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `colors`
---
-ALTER TABLE `colors`
-  ADD PRIMARY KEY (`colorId`);
-
---
--- Indexes for table `favorites`
---
-ALTER TABLE `favorites`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `items`
---
-ALTER TABLE `items`
-  ADD PRIMARY KEY (`itemId`),
-  ADD KEY `brandId` (`brandId`);
-
---
--- Indexes for table `item_categories`
---
-ALTER TABLE `item_categories`
-  ADD PRIMARY KEY (`id`),
-  ADD KEY `itemId` (`itemId`),
-  ADD KEY `categoryId` (`categoryId`);
-
---
--- Indexes for table `item_colors`
---
-ALTER TABLE `item_colors`
-  ADD PRIMARY KEY (`id`),
-  ADD KEY `colorId` (`colorId`),
-  ADD KEY `itemId` (`itemId`);
-
---
--- Indexes for table `orders`
---
-ALTER TABLE `orders`
-  ADD PRIMARY KEY (`orderId`),
-  ADD KEY `itemId` (`itemId`),
-  ADD KEY `orders_ibfk_2` (`acctId`);
-
---
--- Indexes for table `promos`
---
-ALTER TABLE `promos`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `users`
---
-ALTER TABLE `users`
-  ADD PRIMARY KEY (`userId`);
-
---
--- AUTO_INCREMENT for dumped tables
---
-
---
--- AUTO_INCREMENT for table `accounts`
---
-ALTER TABLE `accounts`
-  MODIFY `acctId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
-
---
--- AUTO_INCREMENT for table `accounttype`
---
-ALTER TABLE `accounttype`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
-
---
--- AUTO_INCREMENT for table `brands`
---
-ALTER TABLE `brands`
-  MODIFY `brandId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
-
---
--- AUTO_INCREMENT for table `cart`
---
-ALTER TABLE `cart`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT for table `categories`
---
-ALTER TABLE `categories`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
-
---
--- AUTO_INCREMENT for table `colors`
---
-ALTER TABLE `colors`
-  MODIFY `colorId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=90;
-
---
--- AUTO_INCREMENT for table `favorites`
---
-ALTER TABLE `favorites`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT for table `items`
---
-ALTER TABLE `items`
-  MODIFY `itemId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
-
---
--- AUTO_INCREMENT for table `item_categories`
---
-ALTER TABLE `item_categories`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
-
---
--- AUTO_INCREMENT for table `item_colors`
---
-ALTER TABLE `item_colors`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
-
---
--- AUTO_INCREMENT for table `orders`
---
-ALTER TABLE `orders`
-  MODIFY `orderId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
-
---
--- AUTO_INCREMENT for table `promos`
---
-ALTER TABLE `promos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT for table `users`
---
-ALTER TABLE `users`
-  MODIFY `userId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
-COMMIT;
+(3, 'Patrick', 'Legaspi', 'Las Pinas', 'patrick@email');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

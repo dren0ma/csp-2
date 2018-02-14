@@ -123,7 +123,7 @@ require 'dbconnect.php';
 							<p class="subtitle is-6 card-subtitle"><?php echo $dbarray['name'] ?></p>
 						</div>
 						<div class="card-image">
-							<a <?php echo "href='viewitem.php?itemId=$id'>";?>
+							<a <?php echo "href='viewitem.php?itemId=$id&qty=1'>";?>
 								<figure class="image is-square">
 									<img class="view-img"<?php echo "src='$img' alt='Bag'>"; ?>
 								</figure>
@@ -133,7 +133,7 @@ require 'dbconnect.php';
 							<nav class="level">
 								<div class="level-left">
 									<div class="level-item has-text-centered">
-										<p class="title is-6">₱ <?php echo $dbarray['price'] ?></p>	
+										<p class="title is-6 price-color">₱ <?php echo $dbarray['price'] ?></p>	
 									</div>
 								</div>
 								<div class="level-right">
@@ -147,9 +147,9 @@ require 'dbconnect.php';
 									</div>
 									<div class="level-item">
 										<a class="button is-outlined button-border-remove addtocart" type="button" 
-										<?php echo "href='addtocart.php?itemId=$id&qty=1'>";?>
+										<?php echo "href='favorites.php?itemId=$id'>";?>
 											<span class="icon">
-												<i class="fas fa-shopping-cart"></i>
+												<i class="far fa-star fav-color"></i>
 											</span>
 										</a>
 									</div>
