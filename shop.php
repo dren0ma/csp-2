@@ -104,7 +104,7 @@ require 'dbconnect.php';
 		$id = $dbarray['itemId'];
 		?>
 
-				<div class="column is-one-fifth">
+				<div class="column is-one-quarter">
 					<div class="card">
 						<?php 
 						if ($_SESSION['acctType'] == 1) {
@@ -147,9 +147,9 @@ require 'dbconnect.php';
 									</div>
 									<div class="level-item">
 										<a class="button is-outlined button-border-remove addtocart" type="button" 
-										<?php echo "href='favorites.php?itemId=$id'>";?>
+										<?php echo "href='addtofavorites.php?itemId=$id'>";?>
 											<span class="icon">
-												<i class="far fa-star fav-color"></i>
+												<i class="far fa-star"></i>
 											</span>
 										</a>
 									</div>
